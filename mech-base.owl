@@ -14,15 +14,15 @@
      xmlns:dcterms="http://purl.org/dc/terms/"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="https://w3id.org/pmd/mech/">
-        <owl:versionIRI rdf:resource="https://w3id.org/pmd/mech/2026-09-04"/>
+        <owl:versionIRI rdf:resource="https://w3id.org/pmd/mech/2026-10-07"/>
         <dce:type rdf:resource="http://purl.obolibrary.org/obo/IAO_8000001"/>
-        <dcterms:bibliographicCitation>mech: Mechanical Testing Ontology. Version 2026-09-04, https://w3id.org/pmd/mech/</dcterms:bibliographicCitation>
-        <dcterms:created>2026-09-04</dcterms:created>
+        <dcterms:bibliographicCitation>mech: Mechanical Testing Ontology. Version 2026-10-07, https://w3id.org/pmd/mech/</dcterms:bibliographicCitation>
+        <dcterms:created>2026-10-07</dcterms:created>
         <dcterms:description>None</dcterms:description>
         <dcterms:license rdf:resource="https://creativecommons.org/licenses/unspecified"/>
         <dcterms:title>Mechanical Testing Ontology</dcterms:title>
         <owl:priorVersion rdf:resource="https://w3id.org/pmd/mech/"/>
-        <owl:versionInfo>2026-09-04</owl:versionInfo>
+        <owl:versionInfo>2026-10-07</owl:versionInfo>
     </owl:Ontology>
     
 

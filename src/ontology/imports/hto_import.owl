@@ -15,9 +15,9 @@
      xmlns:terms="http://purl.org/dc/terms/"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="https://w3id.org/pmd/mech/imports/hto_import.owl">
-        <owl:versionIRI rdf:resource="https://w3id.org/pmd/mech/releases/2026-09-04/imports/hto_import.owl"/>
+        <owl:versionIRI rdf:resource="https://w3id.org/pmd/mech/releases/2026-10-07/imports/hto_import.owl"/>
         <dc:source rdf:resource="https://w3id.org/pmd/hto/3.0.0"/>
-        <owl:versionInfo>2026-09-04</owl:versionInfo>
+        <owl:versionInfo>2026-10-07</owl:versionInfo>
     </owl:Ontology>
     
 

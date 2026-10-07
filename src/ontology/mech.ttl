@@ -17,11 +17,11 @@
 @base <https://w3id.org/pmd/mech.ttl> .
 
 <https://w3id.org/pmd/mech.ttl> rdf:type owl:Ontology ;
-                                 owl:versionIRI <https://w3id.org/pmd/mech/releases/2026-09-04/mech.ttl> ;
+                                 owl:versionIRI <https://w3id.org/pmd/mech/releases/2026-10-07/mech.ttl> ;
                                  dcterms:description "None" ;
                                  dcterms:license <https://creativecommons.org/licenses/unspecified> ;
                                  dcterms:title "Mechanical Testing Ontology" ;
-                                 owl:versionInfo "2026-09-04" .
+                                 owl:versionInfo "2026-10-07" .
 
 #################################################################
 #    Annotation properties
