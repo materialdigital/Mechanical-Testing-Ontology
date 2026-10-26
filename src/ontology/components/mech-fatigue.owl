@@ -1092,6 +1092,26 @@ Option 2 (ontology advanced): make an equv. class axiom with some and only to ma
     
 
 
+    <!-- https://w3id.org/pmd/mech/MECH_0002021 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/mech/MECH_0002021">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0025012"/>
+        <rdfs:label xml:lang="en">alternating strength estimation from tensile strength based on FKM guidelines</rdfs:label>
+        <skos:definition xml:lang="en">An analytical calculation that estimates alternating fatigue strength of a material from its tensile strength and chemical composition based on FKM guidlines.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/mech/MECH_0002022 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/mech/MECH_0002022">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0025012"/>
+        <rdfs:label xml:lang="en">alternating strength estimation from fatigue strength and loading ratios</rdfs:label>
+        <skos:definition xml:lang="en">An analytical calculation that estimates alternating fatigue strength from fatigue strength estimated at a load ratio different from -1.</skos:definition>
+    </owl:Class>
+    
+
+
     <!-- https://w3id.org/pmd/mech/MECH_0025001 -->
 
     <owl:Class rdf:about="https://w3id.org/pmd/mech/MECH_0025001"/>
