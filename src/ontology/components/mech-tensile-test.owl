@@ -31,9 +31,9 @@
     
 
 
-    <!-- https://w3id.org/pmd/co/PMD_0025004 -->
+    <!-- https://w3id.org/pmd/mech/MECH_0002023 -->
 
-    <owl:Class rdf:about="https://w3id.org/pmd/co/PMD_0025004">
+    <owl:Class rdf:about="https://w3id.org/pmd/mech/MECH_0002023">
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
@@ -99,9 +99,9 @@
     
 
 
-    <!-- https://w3id.org/pmd/co/PMD_0025005 -->
+    <!-- https://w3id.org/pmd/mech/MECH_0002024 -->
 
-    <owl:Class rdf:about="https://w3id.org/pmd/co/PMD_0025005">
+    <owl:Class rdf:about="https://w3id.org/pmd/mech/MECH_0002024">
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
@@ -167,9 +167,9 @@
     
 
 
-    <!-- https://w3id.org/pmd/co/PMD_0025008 -->
+    <!-- https://w3id.org/pmd/mech/MECH_0002025 -->
 
-    <owl:Class rdf:about="https://w3id.org/pmd/co/PMD_0025008">
+    <owl:Class rdf:about="https://w3id.org/pmd/mech/MECH_0002025">
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
@@ -235,9 +235,9 @@
     
 
 
-    <!-- https://w3id.org/pmd/co/PMD_0025013 -->
+    <!-- https://w3id.org/pmd/mech/MECH_0002026 -->
 
-    <owl:Class rdf:about="https://w3id.org/pmd/co/PMD_0025013">
+    <owl:Class rdf:about="https://w3id.org/pmd/mech/MECH_0002026">
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
@@ -303,9 +303,9 @@
     
 
 
-    <!-- https://w3id.org/pmd/co/PMD_0025014 -->
+    <!-- https://w3id.org/pmd/mech/MECH_0002027 -->
 
-    <owl:Class rdf:about="https://w3id.org/pmd/co/PMD_0025014">
+    <owl:Class rdf:about="https://w3id.org/pmd/mech/MECH_0002027">
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
@@ -371,9 +371,9 @@
     
 
 
-    <!-- https://w3id.org/pmd/co/PMD_0025021 -->
+    <!-- https://w3id.org/pmd/mech/MECH_0002028 -->
 
-    <owl:Class rdf:about="https://w3id.org/pmd/co/PMD_0025021">
+    <owl:Class rdf:about="https://w3id.org/pmd/mech/MECH_0002028">
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
@@ -439,13 +439,13 @@
     
 
 
-    <!-- https://w3id.org/pmd/co/PMD_0025024 -->
+    <!-- https://w3id.org/pmd/mech/MECH_0002029 -->
 
-    <owl:Class rdf:about="https://w3id.org/pmd/co/PMD_0025024">
+    <owl:Class rdf:about="https://w3id.org/pmd/mech/MECH_0002029">
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="https://w3id.org/pmd/tto/TTO_0000053"/>
+                    <rdf:Description rdf:about="https://w3id.org/pmd/co/PMD_0080154"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0009007"/>
                         <owl:someValuesFrom>
@@ -501,19 +501,19 @@
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/tto/TTO_0000053"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0080154"/>
         <rdfs:label xml:lang="en">tensile strength at 1050°C and argon atmosphere</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- https://w3id.org/pmd/co/PMD_0025025 -->
+    <!-- https://w3id.org/pmd/mech/MECH_0002030 -->
 
-    <owl:Class rdf:about="https://w3id.org/pmd/co/PMD_0025025">
+    <owl:Class rdf:about="https://w3id.org/pmd/mech/MECH_0002030">
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="https://w3id.org/pmd/tto/TTO_0000053"/>
+                    <rdf:Description rdf:about="https://w3id.org/pmd/co/PMD_0080154"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0009007"/>
                         <owl:someValuesFrom>
@@ -569,19 +569,19 @@
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/tto/TTO_0000053"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0080154"/>
         <rdfs:label xml:lang="en">tensile strength at 1150°C and argon atmosphere</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- https://w3id.org/pmd/co/PMD_0025026 -->
+    <!-- https://w3id.org/pmd/mech/MECH_0002031 -->
 
-    <owl:Class rdf:about="https://w3id.org/pmd/co/PMD_0025026">
+    <owl:Class rdf:about="https://w3id.org/pmd/mech/MECH_0002031">
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="https://w3id.org/pmd/tto/TTO_0000053"/>
+                    <rdf:Description rdf:about="https://w3id.org/pmd/co/PMD_0080154"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0009007"/>
                         <owl:someValuesFrom>
@@ -637,19 +637,19 @@
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/tto/TTO_0000053"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0080154"/>
         <rdfs:label xml:lang="en">tensile strength at 1100°C and argon atmosphere</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- https://w3id.org/pmd/co/PMD_0025027 -->
+    <!-- https://w3id.org/pmd/mech/MECH_0002032 -->
 
-    <owl:Class rdf:about="https://w3id.org/pmd/co/PMD_0025027">
+    <owl:Class rdf:about="https://w3id.org/pmd/mech/MECH_0002032">
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="https://w3id.org/pmd/tto/TTO_0000053"/>
+                    <rdf:Description rdf:about="https://w3id.org/pmd/co/PMD_0080154"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0009007"/>
                         <owl:someValuesFrom>
@@ -705,19 +705,19 @@
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/tto/TTO_0000053"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0080154"/>
         <rdfs:label xml:lang="en">tensile strength at 1050°C and air atmosphere</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- https://w3id.org/pmd/co/PMD_0025028 -->
+    <!-- https://w3id.org/pmd/mech/MECH_0002033 -->
 
-    <owl:Class rdf:about="https://w3id.org/pmd/co/PMD_0025028">
+    <owl:Class rdf:about="https://w3id.org/pmd/mech/MECH_0002033">
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="https://w3id.org/pmd/tto/TTO_0000053"/>
+                    <rdf:Description rdf:about="https://w3id.org/pmd/co/PMD_0080154"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0009007"/>
                         <owl:someValuesFrom>
@@ -773,19 +773,19 @@
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/tto/TTO_0000053"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0080154"/>
         <rdfs:label xml:lang="en">tensile strength at 1150°C and air atmosphere</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- https://w3id.org/pmd/co/PMD_0025029 -->
+    <!-- https://w3id.org/pmd/mech/MECH_0002034 -->
 
-    <owl:Class rdf:about="https://w3id.org/pmd/co/PMD_0025029">
+    <owl:Class rdf:about="https://w3id.org/pmd/mech/MECH_0002034">
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="https://w3id.org/pmd/tto/TTO_0000053"/>
+                    <rdf:Description rdf:about="https://w3id.org/pmd/co/PMD_0080154"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0009007"/>
                         <owl:someValuesFrom>
@@ -841,19 +841,19 @@
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/tto/TTO_0000053"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0080154"/>
         <rdfs:label xml:lang="en">tensile strength at 1100°C and air atmosphere</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- https://w3id.org/pmd/co/PMD_0025030 -->
+    <!-- https://w3id.org/pmd/mech/MECH_0002035 -->
 
-    <owl:Class rdf:about="https://w3id.org/pmd/co/PMD_0025030">
+    <owl:Class rdf:about="https://w3id.org/pmd/mech/MECH_0002035">
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="https://w3id.org/pmd/tto/TTO_0000033"/>
+                    <rdf:Description rdf:about="https://w3id.org/pmd/co/PMD_0060004"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0009007"/>
                         <owl:someValuesFrom>
@@ -909,19 +909,19 @@
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/tto/TTO_0000033"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0060004"/>
         <rdfs:label xml:lang="en">percentage elongatation at fracture at 1050°C and air atmosphere</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- https://w3id.org/pmd/co/PMD_0025031 -->
+    <!-- https://w3id.org/pmd/mech/MECH_0002036 -->
 
-    <owl:Class rdf:about="https://w3id.org/pmd/co/PMD_0025031">
+    <owl:Class rdf:about="https://w3id.org/pmd/mech/MECH_0002036">
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="https://w3id.org/pmd/tto/TTO_0000033"/>
+                    <rdf:Description rdf:about="https://w3id.org/pmd/co/PMD_0060004"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0009007"/>
                         <owl:someValuesFrom>
@@ -977,19 +977,19 @@
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/tto/TTO_0000033"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0060004"/>
         <rdfs:label xml:lang="en">percentage elongatation at fracture at 1150°C and air atmosphere</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- https://w3id.org/pmd/co/PMD_0025033 -->
+    <!-- https://w3id.org/pmd/mech/MECH_0002037 -->
 
-    <owl:Class rdf:about="https://w3id.org/pmd/co/PMD_0025033">
+    <owl:Class rdf:about="https://w3id.org/pmd/mech/MECH_0002037">
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="https://w3id.org/pmd/tto/TTO_0000033"/>
+                    <rdf:Description rdf:about="https://w3id.org/pmd/co/PMD_0060004"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0009007"/>
                         <owl:someValuesFrom>
@@ -1045,19 +1045,19 @@
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/tto/TTO_0000033"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0060004"/>
         <rdfs:label xml:lang="en">percentage elongatation at fracture at 1100°C and air atmosphere</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- https://w3id.org/pmd/co/PMD_0025034 -->
+    <!-- https://w3id.org/pmd/mech/MECH_0002038 -->
 
-    <owl:Class rdf:about="https://w3id.org/pmd/co/PMD_0025034">
+    <owl:Class rdf:about="https://w3id.org/pmd/mech/MECH_0002038">
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="https://w3id.org/pmd/tto/TTO_0000033"/>
+                    <rdf:Description rdf:about="https://w3id.org/pmd/co/PMD_0060004"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0009007"/>
                         <owl:someValuesFrom>
@@ -1113,19 +1113,19 @@
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/tto/TTO_0000033"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0060004"/>
         <rdfs:label xml:lang="en">percentage elongatation at fracture at 1150°C and argon atmosphere</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- https://w3id.org/pmd/co/PMD_0025035 -->
+    <!-- https://w3id.org/pmd/mech/MECH_0002039 -->
 
-    <owl:Class rdf:about="https://w3id.org/pmd/co/PMD_0025035">
+    <owl:Class rdf:about="https://w3id.org/pmd/mech/MECH_0002039">
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="https://w3id.org/pmd/tto/TTO_0000033"/>
+                    <rdf:Description rdf:about="https://w3id.org/pmd/co/PMD_0060004"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0009007"/>
                         <owl:someValuesFrom>
@@ -1181,19 +1181,19 @@
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/tto/TTO_0000033"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0060004"/>
         <rdfs:label xml:lang="en">percentage elongatation at fracture at 1050°C and argon atmosphere</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- https://w3id.org/pmd/co/PMD_0025036 -->
+    <!-- https://w3id.org/pmd/mech/MECH_0002040 -->
 
-    <owl:Class rdf:about="https://w3id.org/pmd/co/PMD_0025036">
+    <owl:Class rdf:about="https://w3id.org/pmd/mech/MECH_0002040">
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="https://w3id.org/pmd/tto/TTO_0000033"/>
+                    <rdf:Description rdf:about="https://w3id.org/pmd/co/PMD_0060004"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0009007"/>
                         <owl:someValuesFrom>
@@ -1249,15 +1249,15 @@
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/tto/TTO_0000033"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0060004"/>
         <rdfs:label xml:lang="en">percentage elongatation at fracture at 1100°C and argon atmosphere</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- https://w3id.org/pmd/co/PMD_0025037 -->
+    <!-- https://w3id.org/pmd/mech/MECH_0002041 -->
 
-    <owl:Class rdf:about="https://w3id.org/pmd/co/PMD_0025037">
+    <owl:Class rdf:about="https://w3id.org/pmd/mech/MECH_0002041">
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
@@ -1323,9 +1323,9 @@
     
 
 
-    <!-- https://w3id.org/pmd/co/PMD_0025038 -->
+    <!-- https://w3id.org/pmd/mech/MECH_0002042 -->
 
-    <owl:Class rdf:about="https://w3id.org/pmd/co/PMD_0025038">
+    <owl:Class rdf:about="https://w3id.org/pmd/mech/MECH_0002042">
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
@@ -1391,9 +1391,9 @@
     
 
 
-    <!-- https://w3id.org/pmd/co/PMD_0025039 -->
+    <!-- https://w3id.org/pmd/mech/MECH_0002043 -->
 
-    <owl:Class rdf:about="https://w3id.org/pmd/co/PMD_0025039">
+    <owl:Class rdf:about="https://w3id.org/pmd/mech/MECH_0002043">
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
@@ -1459,9 +1459,9 @@
     
 
 
-    <!-- https://w3id.org/pmd/co/PMD_0025040 -->
+    <!-- https://w3id.org/pmd/mech/MECH_0002044 -->
 
-    <owl:Class rdf:about="https://w3id.org/pmd/co/PMD_0025040">
+    <owl:Class rdf:about="https://w3id.org/pmd/mech/MECH_0002044">
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
@@ -1527,9 +1527,9 @@
     
 
 
-    <!-- https://w3id.org/pmd/co/PMD_0025041 -->
+    <!-- https://w3id.org/pmd/mech/MECH_0002045 -->
 
-    <owl:Class rdf:about="https://w3id.org/pmd/co/PMD_0025041">
+    <owl:Class rdf:about="https://w3id.org/pmd/mech/MECH_0002045">
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
@@ -1595,9 +1595,9 @@
     
 
 
-    <!-- https://w3id.org/pmd/co/PMD_0025042 -->
+    <!-- https://w3id.org/pmd/mech/MECH_0002046 -->
 
-    <owl:Class rdf:about="https://w3id.org/pmd/co/PMD_0025042">
+    <owl:Class rdf:about="https://w3id.org/pmd/mech/MECH_0002046">
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
@@ -2428,13 +2428,6 @@
         <skos:definition xml:lang="en">Target strain is a process attribute of a compression test or a hot tensile test which defines the final strain that a test piece should achieve in the test.</skos:definition>
     </owl:Class>
     
-
-
-    <!-- https://w3id.org/pmd/tto/TTO_0000033 -->
-
-    <rdf:Description rdf:about="https://w3id.org/pmd/tto/TTO_0000033">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/mech/MECH_0000068"/>
-    </rdf:Description>
     
 
 

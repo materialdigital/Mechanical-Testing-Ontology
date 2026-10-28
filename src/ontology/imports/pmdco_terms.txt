@@ -38,6 +38,23 @@ https://w3id.org/pmd/co/PMD_0025026 # lubricant role
 http://purl.obolibrary.org/obo/BFO_0000063 # precedes
 https://w3id.org/pmd/co/PMD_0000789 # indentation hardness
 
+# previously from TTO 
+https://w3id.org/pmd/co/PMD_0060014  # gauge length
+https://w3id.org/pmd/co/PMD_0060015 # extensometer gauge length
+https://w3id.org/pmd/co/PMD_0060017 # final gauge length after fracture
+https://w3id.org/pmd/co/PMD_0060016 # original gauge length
+https://w3id.org/pmd/co/PMD_0060019 # cross-sectional area
+https://w3id.org/pmd/co/PMD_0060004 # 'percentage elongation after fracture'
+https://w3id.org/pmd/co/PMD_0060005 # percentage permanent elongation
+https://w3id.org/pmd/co/PMD_0060018 # reduction of area
+https://w3id.org/pmd/co/PMD_0060019 # cross section area
+https://w3id.org/pmd/co/PMD_0080154 # UTS
+https://w3id.org/pmd/co/PMD_0080172 # lower yield strength
+https://w3id.org/pmd/co/PMD_0080173 # upper yield strength
+https://w3id.org/pmd/co/PMD_0060012 # 'percentage total extension at fracture'
+https://w3id.org/pmd/co/PMD_0060013 # 'percentage permanent extension'
+https://w3id.org/pmd/co/PMD_0060011 #  'percentage extension'
+
 ### Occurents
 https://w3id.org/pmd/co/PMD_0000008  # process attribute
 https://w3id.org/pmd/co/PMD_0025023  # heating rate
