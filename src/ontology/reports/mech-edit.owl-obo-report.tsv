@@ -106,6 +106,32 @@ WARN	missing_definition	mechanical testing specimen role	textual definition
 WARN	missing_definition	run out role	textual definition	
 WARN	missing_definition	failed specimen role	textual definition	
 WARN	missing_definition	fatigue load-cycle number point	textual definition	
+WARN	missing_definition	alternating strength estimation from tensile strength based on FKM guidelines	textual definition	
+WARN	missing_definition	alternating strength estimation from fatigue strength and loading ratios	textual definition	
+WARN	missing_definition	fracture strength at 1050°C and air atmosphere	textual definition	
+WARN	missing_definition	fracture strength at 1150°C and air atmosphere	textual definition	
+WARN	missing_definition	fracture strength at 1100°C and air atmosphere	textual definition	
+WARN	missing_definition	fracture strength at 1050°C and argon atmosphere	textual definition	
+WARN	missing_definition	fracture strength at 1150°C and argon atmosphere	textual definition	
+WARN	missing_definition	fracture strength at 1100°C and argon atmosphere	textual definition	
+WARN	missing_definition	tensile strength at 1050°C and argon atmosphere	textual definition	
+WARN	missing_definition	tensile strength at 1150°C and argon atmosphere	textual definition	
+WARN	missing_definition	tensile strength at 1100°C and argon atmosphere	textual definition	
+WARN	missing_definition	tensile strength at 1050°C and air atmosphere	textual definition	
+WARN	missing_definition	tensile strength at 1150°C and air atmosphere	textual definition	
+WARN	missing_definition	tensile strength at 1100°C and air atmosphere	textual definition	
+WARN	missing_definition	percentage elongatation at fracture at 1050°C and air atmosphere	textual definition	
+WARN	missing_definition	percentage elongatation at fracture at 1150°C and air atmosphere	textual definition	
+WARN	missing_definition	percentage elongatation at fracture at 1100°C and air atmosphere	textual definition	
+WARN	missing_definition	percentage elongatation at fracture at 1150°C and argon atmosphere	textual definition	
+WARN	missing_definition	percentage elongatation at fracture at 1050°C and argon atmosphere	textual definition	
+WARN	missing_definition	percentage elongatation at fracture at 1100°C and argon atmosphere	textual definition	
+WARN	missing_definition	percentage reduction of area at fracture at 1150°C and argon atmosphere	textual definition	
+WARN	missing_definition	percentage reduction of area at fracture at 1050°C and argon atmosphere	textual definition	
+WARN	missing_definition	percentage reduction of area at fracture at 1100°C and argon atmosphere	textual definition	
+WARN	missing_definition	percentage reduction of area at fracture at 1150°C and air atmosphere	textual definition	
+WARN	missing_definition	percentage reduction of area at fracture at 1050°C and air atmosphere	textual definition	
+WARN	missing_definition	percentage reduction of area at fracture at 1100°C and air atmosphere	textual definition	
 WARN	missing_definition	hot tensile testing process	textual definition	
 WARN	missing_definition	fracture strength	textual definition	
 WARN	missing_definition	strain hardening exponent	textual definition	
