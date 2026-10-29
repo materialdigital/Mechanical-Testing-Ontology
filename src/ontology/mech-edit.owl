@@ -29,7 +29,6 @@ Annotation(dcterms:license <https://creativecommons.org/licenses/unspecified>)
 Annotation(dcterms:title "Mechanical Testing Ontology")
 
 Declaration(Class(<https://w3id.org/pmd/MECH_0000000>))
-Declaration(Class(<https://w3id.org/pmd/co/PMD_0000848>))
 Declaration(Class(<https://w3id.org/pmd/co/PMD_0060004>))
 Declaration(Class(<https://w3id.org/pmd/co/PMD_0080154>))
 Declaration(Class(<https://w3id.org/pmd/tto/TTO_0000015>))

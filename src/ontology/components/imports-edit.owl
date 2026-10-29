@@ -40,62 +40,6 @@
     <rdf:Description rdf:about="http://qudt.org/schema/qudt/Unit">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000003"/>
     </rdf:Description>
-    
-
-
-    <!-- https://w3id.org/pmd/tto/TTO_0000005 -->
-
-    <rdf:Description rdf:about="https://w3id.org/pmd/tto/TTO_0000005">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0000848"/>
-    </rdf:Description>
-    
-
-
-    <!-- https://w3id.org/pmd/tto/TTO_0000015 -->
-
-    <rdf:Description rdf:about="https://w3id.org/pmd/tto/TTO_0000015">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0050051"/>
-    </rdf:Description>
-    
-
-
-    <!-- https://w3id.org/pmd/tto/TTO_0000027 -->
-
-    <rdf:Description rdf:about="https://w3id.org/pmd/tto/TTO_0000027">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0050051"/>
-    </rdf:Description>
-    
-
-
-    <!-- https://w3id.org/pmd/tto/TTO_0000029 -->
-
-    <rdf:Description rdf:about="https://w3id.org/pmd/tto/TTO_0000029">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0050153"/>
-    </rdf:Description>
-    
-
-
-    <!-- https://w3id.org/pmd/tto/TTO_0000030 -->
-
-    <rdf:Description rdf:about="https://w3id.org/pmd/tto/TTO_0000030">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0050154"/>
-    </rdf:Description>
-    
-
-
-    <!-- https://w3id.org/pmd/tto/TTO_0000056 -->
-
-    <rdf:Description rdf:about="https://w3id.org/pmd/tto/TTO_0000056">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0050153"/>
-    </rdf:Description>
-    
-
-
-    <!-- https://w3id.org/pmd/tto/TTO_0000060 -->
-
-    <rdf:Description rdf:about="https://w3id.org/pmd/tto/TTO_0000060">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0050154"/>
-    </rdf:Description>
 </rdf:RDF>
 
 
