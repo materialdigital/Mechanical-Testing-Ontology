@@ -7,9 +7,9 @@ Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 
 
 Ontology(<https://w3id.org/pmd/mech/imports/pmdco_import.owl>
-<https://w3id.org/pmd/mech/releases/2026-10-28/imports/pmdco_import.owl>
+<https://w3id.org/pmd/mech/releases/2026-10-29/imports/pmdco_import.owl>
 Annotation(<http://purl.org/dc/elements/1.1/source> <https://w3id.org/pmd/co/releases/2026-10-21/pmdco.ttl>)
-Annotation(owl:versionInfo "2026-10-28")
+Annotation(owl:versionInfo "2026-10-29")
 
 Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000001>))
 Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000002>))
@@ -149,6 +149,7 @@ Declaration(Class(<http://purl.obolibrary.org/obo/OBI_0000245>))
 Declaration(Class(<http://purl.obolibrary.org/obo/OBI_0000260>))
 Declaration(Class(<http://purl.obolibrary.org/obo/OBI_0000571>))
 Declaration(Class(<http://purl.obolibrary.org/obo/OBI_0000835>))
+Declaration(Class(<http://purl.obolibrary.org/obo/OBI_0001930>))
 Declaration(Class(<http://purl.obolibrary.org/obo/OBI_0001931>))
 Declaration(Class(<http://purl.obolibrary.org/obo/OBI_0001933>))
 Declaration(Class(<http://purl.obolibrary.org/obo/UO_0000000>))
@@ -449,10 +450,13 @@ Declaration(Class(<https://w3id.org/pmd/co/PMD_0080100>))
 Declaration(Class(<https://w3id.org/pmd/co/PMD_0080101>))
 Declaration(Class(<https://w3id.org/pmd/co/PMD_0080108>))
 Declaration(Class(<https://w3id.org/pmd/co/PMD_0080116>))
+Declaration(Class(<https://w3id.org/pmd/co/PMD_0080150>))
+Declaration(Class(<https://w3id.org/pmd/co/PMD_0080151>))
 Declaration(Class(<https://w3id.org/pmd/co/PMD_0080154>))
 Declaration(Class(<https://w3id.org/pmd/co/PMD_0080171>))
 Declaration(Class(<https://w3id.org/pmd/co/PMD_0080172>))
 Declaration(Class(<https://w3id.org/pmd/co/PMD_0080173>))
+Declaration(Class(<https://w3id.org/pmd/co/PMD_0080181>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/BFO_0000050>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/BFO_0000051>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/BFO_0000054>))
@@ -2448,7 +2452,7 @@ EquivalentClasses(<http://purl.obolibrary.org/obo/IAO_0020010> ObjectIntersectio
 SubClassOf(<http://purl.obolibrary.org/obo/IAO_0020010> <http://purl.obolibrary.org/obo/COB_0000035>)
 SubClassOf(<http://purl.obolibrary.org/obo/IAO_0020010> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/OBI_0000299> <http://purl.obolibrary.org/obo/IAO_0020000>))
 
-# Class: <http://purl.obolibrary.org/obo/NCBITaxon_9606> (Homo sapiens)
+# Class: <http://purl.obolibrary.org/obo/NCBITaxon_9606> (homo sapiens)
 
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/NCBITaxon_9606> "Homo sapiens")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/NCBITaxon_9606> "homo sapiens")
@@ -2559,6 +2563,14 @@ AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/OBI_0000835> "man
 EquivalentClasses(<http://purl.obolibrary.org/obo/OBI_0000835> ObjectIntersectionOf(ObjectUnionOf(<http://purl.obolibrary.org/obo/NCBITaxon_9606> <http://purl.obolibrary.org/obo/OBI_0000245>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000087> <http://purl.obolibrary.org/obo/OBI_0000571>)))
 SubClassOf(<http://purl.obolibrary.org/obo/OBI_0000835> <http://purl.obolibrary.org/obo/BFO_0000040>)
 SubClassOf(<http://purl.obolibrary.org/obo/OBI_0000835> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000087> <http://purl.obolibrary.org/obo/OBI_0000571>))
+
+# Class: <http://purl.obolibrary.org/obo/OBI_0001930> (categorical value specification)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000114> <http://purl.obolibrary.org/obo/OBI_0001930> <http://purl.obolibrary.org/obo/IAO_0000123>)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/OBI_0001930> "A value specification that is specifies one category out of a fixed number of nominal categories"@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/OBI_0001930> "PERSON:Bjoern Peters")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/OBI_0001930> "categorical value specification")
+SubClassOf(<http://purl.obolibrary.org/obo/OBI_0001930> <http://purl.obolibrary.org/obo/OBI_0001933>)
 
 # Class: <http://purl.obolibrary.org/obo/OBI_0001931> (scalar value specification)
 
@@ -2857,7 +2869,7 @@ AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3
 SubClassOf(<https://w3id.org/pmd/co/PMD_0000552> <https://w3id.org/pmd/co/PMD_0000957>)
 SubClassOf(<https://w3id.org/pmd/co/PMD_0000552> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0009006> <https://w3id.org/pmd/co/PMD_0000551>))
 
-# Class: <https://w3id.org/pmd/co/PMD_0000553> (chemisches Potential)
+# Class: <https://w3id.org/pmd/co/PMD_0000553> (chemical potential)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000114> <https://w3id.org/pmd/co/PMD_0000553> <http://purl.obolibrary.org/obo/IAO_0000122>)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <https://w3id.org/pmd/co/PMD_0000553> "PERSON: Joerg Waitelonis")
@@ -3328,7 +3340,7 @@ AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/co/PMD_0000957> "Eine Analyse, die die äußere und innere Struktur und Morphologie von Materialien untersucht, einschließlich der Anordnung von Atomen, Kristallen, Körnern und Phasen, oft unter Verwendung von Techniken wie Mikroskopie und Beugung."@de)
 SubClassOf(<https://w3id.org/pmd/co/PMD_0000957> <http://purl.obolibrary.org/obo/OBI_0000070>)
 
-# Class: <https://w3id.org/pmd/co/PMD_0000965> (surface layer (fiat object part))
+# Class: <https://w3id.org/pmd/co/PMD_0000965> (Oberflächenschicht (Fiat-Objektteil))
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000114> <https://w3id.org/pmd/co/PMD_0000965> <http://purl.obolibrary.org/obo/IAO_0000122>)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <https://w3id.org/pmd/co/PMD_0000965> "PERSON: Joerg Waitelonis")
@@ -4888,7 +4900,7 @@ AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/co/PMD_0025017> "Outer diameter is a length of a straight line from one outer surface of an object or space to the other side of its outer surface through the center of an object or space when it has the inside and outside surface."@en)
 SubClassOf(<https://w3id.org/pmd/co/PMD_0025017> <https://w3id.org/pmd/co/PMD_0050051>)
 
-# Class: <https://w3id.org/pmd/co/PMD_0025018> (geometrische relationale Qualität)
+# Class: <https://w3id.org/pmd/co/PMD_0025018> (geometric relational quality)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000114> <https://w3id.org/pmd/co/PMD_0025018> <http://purl.obolibrary.org/obo/IAO_0000122>)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <https://w3id.org/pmd/co/PMD_0025018> "PERSON: Kamilla Zaripova")
@@ -5396,6 +5408,36 @@ SubClassOf(Annotation(rdfs:comment "In field theories (e.g., gravity, electrosta
 F=−∇ϕ(r⃗)F
 This is the spatial analogue: instead of asking \"how does energy change per unit carrier added?\", you ask \"how does energy change per unit carrier moved in space?\""@en) <https://w3id.org/pmd/co/PMD_0080116> ObjectIntersectionOf(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002328> <https://w3id.org/pmd/co/PMD_0020142>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002328> <https://w3id.org/pmd/co/PMD_0020319>)))
 
+# Class: <https://w3id.org/pmd/co/PMD_0080150> (Zähigkeit)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000114> <https://w3id.org/pmd/co/PMD_0080150> <http://purl.obolibrary.org/obo/IAO_0000122>)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000116> <https://w3id.org/pmd/co/PMD_0080150> "Necessary and sufficient conditions for 'toughness' have not yet been formalized. The term is defined as a specific subtype of 'strength'. Distinguishing criteria are domain-specific and depend on measurement conventions or source terminology not yet expressed as OWL restrictions."@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <https://w3id.org/pmd/co/PMD_0080150> "PERSON: Thomas Hanke")
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/co/PMD_0080150> "Zähigkeit"@de)
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/co/PMD_0080150> "toughness"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#altLabel> <https://w3id.org/pmd/co/PMD_0080150> "Zähigkeit"@de)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#altLabel> <https://w3id.org/pmd/co/PMD_0080150> "toughness"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/co/PMD_0080150> "Toughness describes the resistance of a material to fracture or crack propagation, determined by its ability to absorb mechanical energy during deformation"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/co/PMD_0080150> "Zähigkeit beschreibt die Widerstandsfähigkeit eines Werkstoffs gegen Bruch oder Rissausbreitung, bestimmt durch die Fähigkeit zur Absorption von mechanischer Energie bei Verformung"@de)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#example> <https://w3id.org/pmd/co/PMD_0080150> "High-toughness tool steel absorbs 80 J before fracture in a Charpy V-notch test at room temperature"@en)
+AnnotationAssertion(<https://w3id.org/pmd/co/PMD_0000060> <https://w3id.org/pmd/co/PMD_0080150> "true"^^xsd:boolean)
+SubClassOf(<https://w3id.org/pmd/co/PMD_0080150> <https://w3id.org/pmd/co/PMD_0020335>)
+
+# Class: <https://w3id.org/pmd/co/PMD_0080151> (fracture toughness)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000114> <https://w3id.org/pmd/co/PMD_0080151> <http://purl.obolibrary.org/obo/IAO_0000122>)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000116> <https://w3id.org/pmd/co/PMD_0080151> "Necessary and sufficient conditions for 'fracture toughness' have not yet been formalized. The term is defined as a specific subtype of 'toughness'. Distinguishing criteria are domain-specific and depend on measurement conventions or source terminology not yet expressed as OWL restrictions."@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <https://w3id.org/pmd/co/PMD_0080151> "PERSON: Thomas Hanke")
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/co/PMD_0080151> "Bruchzähigkeit"@de)
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/co/PMD_0080151> "fracture toughness"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#altLabel> <https://w3id.org/pmd/co/PMD_0080151> "K_Ic"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#altLabel> <https://w3id.org/pmd/co/PMD_0080151> "critical stress intensity factor"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/co/PMD_0080151> "Bruchzähigkeit ist eine Zähigkeitsqualität eines Materials, die die kritische Spannungsintensität beschreibt, bei der ein vorhandener Riss zu wachsen beginnt"@de)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/co/PMD_0080151> "Fracture toughness is a toughness quality of a material that specifies the critical stress intensity at which a pre-existing crack begins to propagate, expressed as the stress intensity factor at the onset of fracture"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#example> <https://w3id.org/pmd/co/PMD_0080151> "Fracture toughness of a high-strength steel measured as 50 MPa·√m according to ISO 17281 test conditions."@en)
+AnnotationAssertion(<https://w3id.org/pmd/co/PMD_0000060> <https://w3id.org/pmd/co/PMD_0080151> "true"^^xsd:boolean)
+SubClassOf(<https://w3id.org/pmd/co/PMD_0080151> <https://w3id.org/pmd/co/PMD_0080150>)
+
 # Class: <https://w3id.org/pmd/co/PMD_0080154> (ultimate tensile strength)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <https://w3id.org/pmd/co/PMD_0080154> "PERSON: Thomas Hanke")
@@ -5449,6 +5491,25 @@ AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#example> <https://w3id.org/pmd/co/PMD_0080173> "Mild steel exhibits an upper yield strength of about 300 MPa, followed by a yield drop to the lower yield point"@en)
 AnnotationAssertion(<https://w3id.org/pmd/co/PMD_0000060> <https://w3id.org/pmd/co/PMD_0080173> "true"^^xsd:boolean)
 SubClassOf(<https://w3id.org/pmd/co/PMD_0080173> <https://w3id.org/pmd/co/PMD_0080171>)
+
+# Class: <https://w3id.org/pmd/co/PMD_0080181> (ductility)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000114> <https://w3id.org/pmd/co/PMD_0080181> <http://purl.obolibrary.org/obo/IAO_0000122>)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000116> <https://w3id.org/pmd/co/PMD_0080181> "Necessary and sufficient conditions for 'ductility' have not yet been formalized. The term is defined as a specific subtype of 'mechanical capability'. Distinguishing criteria are domain-specific and depend on measurement conventions or source terminology not yet expressed as OWL restrictions."@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <https://w3id.org/pmd/co/PMD_0080181> "PERSON: Thomas Hanke")
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/co/PMD_0080181> "Duktilität"@de)
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/co/PMD_0080181> "ductility"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#altLabel> <https://w3id.org/pmd/co/PMD_0080181> "Biegsamkeit"@de)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#altLabel> <https://w3id.org/pmd/co/PMD_0080181> "Duktilität"@de)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#altLabel> <https://w3id.org/pmd/co/PMD_0080181> "ductility"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#altLabel> <https://w3id.org/pmd/co/PMD_0080181> "flexibility"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/co/PMD_0080181> "Ductility is the ability of a material to deform plastically without breaking"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/co/PMD_0080181> "Duktilität ist die Fähigkeit eines Materials, plastisch zu verformen, ohne zu brechen"@de)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#example> <https://w3id.org/pmd/co/PMD_0080181> "Low-carbon steel has high ductility, with elongation at break exceeding 30 %"@en)
+AnnotationAssertion(<https://w3id.org/pmd/co/PMD_0000060> <https://w3id.org/pmd/co/PMD_0080181> "true"^^xsd:boolean)
+SubClassOf(<https://w3id.org/pmd/co/PMD_0080181> <https://w3id.org/pmd/co/PMD_0020335>)
+SubClassOf(<https://w3id.org/pmd/co/PMD_0080181> <https://w3id.org/pmd/co/PMD_0023004>)
+SubClassOf(<https://w3id.org/pmd/co/PMD_0080181> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000092> ObjectIntersectionOf(<https://w3id.org/pmd/co/PMD_0000000> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000056> <https://w3id.org/pmd/co/PMD_0000596>))))
 
 
 ############################

@@ -55,7 +55,6 @@ WARN	missing_definition	compressive yield strength	textual definition
 WARN	missing_definition	compressive proof strength	textual definition	
 WARN	missing_definition	compressive proof strength dp02	textual definition	
 WARN	missing_definition	compressive strength	textual definition	
-WARN	missing_definition	ductility	textual definition	
 WARN	missing_definition	height reduction	textual definition	
 WARN	missing_definition	strain rate sensitivity	textual definition	
 WARN	missing_definition	deformation activation energy	textual definition	
@@ -74,7 +73,6 @@ WARN	missing_definition	scaling factor of Paris law	textual definition
 WARN	missing_definition	slope of Paris law	textual definition	
 WARN	missing_definition	threshold stress intensity factor	textual definition	
 WARN	missing_definition	stress intensity factor range	textual definition	
-WARN	missing_definition	fracture toughness	textual definition	
 WARN	missing_definition	scatter band of a fatigue curve	textual definition	
 WARN	missing_definition	fatigue scatter bandwidth	textual definition	
 WARN	missing_definition	crack length	textual definition	
@@ -132,6 +130,7 @@ WARN	missing_definition	percentage reduction of area at fracture at 1100°C and 
 WARN	missing_definition	percentage reduction of area at fracture at 1150°C and air atmosphere	textual definition	
 WARN	missing_definition	percentage reduction of area at fracture at 1050°C and air atmosphere	textual definition	
 WARN	missing_definition	percentage reduction of area at fracture at 1100°C and air atmosphere	textual definition	
+WARN	missing_definition	fatigue-related property	textual definition	
 WARN	missing_definition	hot tensile testing process	textual definition	
 WARN	missing_definition	fracture strength	textual definition	
 WARN	missing_definition	strain hardening exponent	textual definition	

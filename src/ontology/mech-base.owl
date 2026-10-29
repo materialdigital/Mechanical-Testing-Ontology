@@ -14,12 +14,12 @@
      xmlns:dcterms="http://purl.org/dc/terms/"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="https://w3id.org/pmd/mech/mech-base.owl">
-        <owl:versionIRI rdf:resource="https://w3id.org/pmd/mech/releases/2026-10-28/mech-base.owl"/>
+        <owl:versionIRI rdf:resource="https://w3id.org/pmd/mech/releases/2026-10-29/mech-base.owl"/>
         <dce:type rdf:resource="http://purl.obolibrary.org/obo/IAO_8000001"/>
         <dcterms:description>None</dcterms:description>
         <dcterms:license rdf:resource="https://creativecommons.org/licenses/unspecified"/>
         <dcterms:title>Mechanical Testing Ontology</dcterms:title>
-        <owl:versionInfo>2026-10-28</owl:versionInfo>
+        <owl:versionInfo>2026-10-29</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -303,6 +303,12 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/OBI_0000295 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OBI_0000295"/>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/OBI_0000299 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OBI_0000299"/>
@@ -390,6 +396,12 @@
     <!-- http://purl.obolibrary.org/obo/RO_0000087 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0000087"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0000092 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0000092"/>
     
 
 
@@ -8798,6 +8810,44 @@ This is the spatial analogue: instead of asking &quot;how does energy change per
     
 
 
+    <!-- https://w3id.org/pmd/co/PMD_0080150 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/co/PMD_0080150">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0020335"/>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000116 xml:lang="en">Necessary and sufficient conditions for &apos;toughness&apos; have not yet been formalized. The term is defined as a specific subtype of &apos;strength&apos;. Distinguishing criteria are domain-specific and depend on measurement conventions or source terminology not yet expressed as OWL restrictions.</obo:IAO_0000116>
+        <obo:IAO_0000117>PERSON: Thomas Hanke</obo:IAO_0000117>
+        <rdfs:label xml:lang="de">Zähigkeit</rdfs:label>
+        <rdfs:label xml:lang="en">toughness</rdfs:label>
+        <skos:altLabel xml:lang="de">Zähigkeit</skos:altLabel>
+        <skos:altLabel xml:lang="en">toughness</skos:altLabel>
+        <skos:definition xml:lang="en">Toughness describes the resistance of a material to fracture or crack propagation, determined by its ability to absorb mechanical energy during deformation</skos:definition>
+        <skos:definition xml:lang="de">Zähigkeit beschreibt die Widerstandsfähigkeit eines Werkstoffs gegen Bruch oder Rissausbreitung, bestimmt durch die Fähigkeit zur Absorption von mechanischer Energie bei Verformung</skos:definition>
+        <skos:example xml:lang="en">High-toughness tool steel absorbs 80 J before fracture in a Charpy V-notch test at room temperature</skos:example>
+        <co:PMD_0000060 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</co:PMD_0000060>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/co/PMD_0080151 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/co/PMD_0080151">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0080150"/>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000116 xml:lang="en">Necessary and sufficient conditions for &apos;fracture toughness&apos; have not yet been formalized. The term is defined as a specific subtype of &apos;toughness&apos;. Distinguishing criteria are domain-specific and depend on measurement conventions or source terminology not yet expressed as OWL restrictions.</obo:IAO_0000116>
+        <obo:IAO_0000117>PERSON: Thomas Hanke</obo:IAO_0000117>
+        <rdfs:label xml:lang="de">Bruchzähigkeit</rdfs:label>
+        <rdfs:label xml:lang="en">fracture toughness</rdfs:label>
+        <skos:altLabel xml:lang="en">K_Ic</skos:altLabel>
+        <skos:altLabel xml:lang="en">critical stress intensity factor</skos:altLabel>
+        <skos:definition xml:lang="de">Bruchzähigkeit ist eine Zähigkeitsqualität eines Materials, die die kritische Spannungsintensität beschreibt, bei der ein vorhandener Riss zu wachsen beginnt</skos:definition>
+        <skos:definition xml:lang="en">Fracture toughness is a toughness quality of a material that specifies the critical stress intensity at which a pre-existing crack begins to propagate, expressed as the stress intensity factor at the onset of fracture</skos:definition>
+        <skos:example xml:lang="en">Fracture toughness of a high-strength steel measured as 50 MPa·√m according to ISO 17281 test conditions.</skos:example>
+        <co:PMD_0000060 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</co:PMD_0000060>
+    </owl:Class>
+    
+
+
     <!-- https://w3id.org/pmd/co/PMD_0080154 -->
 
     <owl:Class rdf:about="https://w3id.org/pmd/co/PMD_0080154">
@@ -8897,6 +8947,44 @@ This is the spatial analogue: instead of asking &quot;how does energy change per
         <skos:definition xml:lang="de">Obere Streckgrenze charakterisiert die maximale Spannung, die vor dem plastischen Fließen eines Materials angewendet werden kann</skos:definition>
         <skos:definition xml:lang="en">Upper yield strength characterizes the maximum stress that can be applied before a material begins to yield plastically</skos:definition>
         <skos:example xml:lang="en">Mild steel exhibits an upper yield strength of about 300 MPa, followed by a yield drop to the lower yield point</skos:example>
+        <co:PMD_0000060 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</co:PMD_0000060>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/co/PMD_0080181 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/co/PMD_0080181">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0020335"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0023004"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000092"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="https://w3id.org/pmd/co/PMD_0000000"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000056"/>
+                                <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/co/PMD_0000596"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000116 xml:lang="en">Necessary and sufficient conditions for &apos;ductility&apos; have not yet been formalized. The term is defined as a specific subtype of &apos;mechanical capability&apos;. Distinguishing criteria are domain-specific and depend on measurement conventions or source terminology not yet expressed as OWL restrictions.</obo:IAO_0000116>
+        <obo:IAO_0000117>PERSON: Thomas Hanke</obo:IAO_0000117>
+        <rdfs:label xml:lang="de">Duktilität</rdfs:label>
+        <rdfs:label xml:lang="en">ductility</rdfs:label>
+        <skos:altLabel xml:lang="de">Biegsamkeit</skos:altLabel>
+        <skos:altLabel xml:lang="de">Duktilität</skos:altLabel>
+        <skos:altLabel xml:lang="en">ductility</skos:altLabel>
+        <skos:altLabel xml:lang="en">flexibility</skos:altLabel>
+        <skos:definition xml:lang="en">Ductility is the ability of a material to deform plastically without breaking</skos:definition>
+        <skos:definition xml:lang="de">Duktilität ist die Fähigkeit eines Materials, plastisch zu verformen, ohne zu brechen</skos:definition>
+        <skos:example xml:lang="en">Low-carbon steel has high ductility, with elongation at break exceeding 30 %</skos:example>
         <co:PMD_0000060 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</co:PMD_0000060>
     </owl:Class>
     
@@ -9575,7 +9663,7 @@ Nitrierhärten</skos:example>
     <!-- https://w3id.org/pmd/mech/MECH_0000033 -->
 
     <owl:Class rdf:about="https://w3id.org/pmd/mech/MECH_0000033">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0000848"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/mech/MECH_0002047"/>
         <rdfs:label xml:lang="en">knee point</rdfs:label>
         <skos:definition xml:lang="en">Knee point is a mechnical property realized in a fatigue process which describes the number of cycles at which the slope of a fatigue curve changes.</skos:definition>
     </owl:Class>
@@ -9585,7 +9673,7 @@ Nitrierhärten</skos:example>
     <!-- https://w3id.org/pmd/mech/MECH_0000034 -->
 
     <owl:Class rdf:about="https://w3id.org/pmd/mech/MECH_0000034">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0000848"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/mech/MECH_0002047"/>
         <rdfs:label xml:lang="en">slope of S-N curve</rdfs:label>
         <skos:definition xml:lang="en">Slope of S-N curve is a mechanical property realized in the fatigue testing which defines the inclination of the S-N curve in the finite life fatigue region.</skos:definition>
     </owl:Class>
@@ -10116,7 +10204,7 @@ Option 2 (ontology advanced): make an equv. class axiom with some and only to ma
     <!-- https://w3id.org/pmd/mech/MECH_0000064 -->
 
     <owl:Class rdf:about="https://w3id.org/pmd/mech/MECH_0000064">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0000848"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0000952"/>
         <obo:IAO_0000119>DIN 50106</obo:IAO_0000119>
         <obo:IAO_0000119>TODO add upper and lower</obo:IAO_0000119>
         <rdfs:comment xml:lang="en">Very important note:  not added directly under yield strength from TTO, because the other yield strength is implicitly TENSILE yield strength (so much on unambigious defintions in an ontology.... )</rdfs:comment>
@@ -10129,7 +10217,7 @@ Option 2 (ontology advanced): make an equv. class axiom with some and only to ma
     <!-- https://w3id.org/pmd/mech/MECH_0000065 -->
 
     <owl:Class rdf:about="https://w3id.org/pmd/mech/MECH_0000065">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0000848"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0000952"/>
         <obo:IAO_0000119>DIN 50106</obo:IAO_0000119>
         <rdfs:label xml:lang="en">compressive proof strength</rdfs:label>
         <skos:definition xml:lang="en">compressive stress at a specified plastic strain</skos:definition>
@@ -10152,21 +10240,11 @@ Option 2 (ontology advanced): make an equv. class axiom with some and only to ma
     <!-- https://w3id.org/pmd/mech/MECH_0000067 -->
 
     <owl:Class rdf:about="https://w3id.org/pmd/mech/MECH_0000067">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0000848"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0000952"/>
         <obo:IAO_0000119>DIN 50106</obo:IAO_0000119>
         <rdfs:label xml:lang="en">compressive strength</rdfs:label>
         <skos:definition>compressive stress at the point when the test piece separates into two (or more) pieces</skos:definition>
         <co:symbol xml:lang="en">R_dB</co:symbol>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/pmd/mech/MECH_0000068 -->
-
-    <owl:Class rdf:about="https://w3id.org/pmd/mech/MECH_0000068">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0000848"/>
-        <rdfs:label xml:lang="en">ductility</rdfs:label>
-        <skos:definition xml:lang="en">Ductlity is a mechanical property which describes the ability of a material to sustain  plastic deformation under tensile load before fracture.</skos:definition>
     </owl:Class>
     
 
@@ -10209,7 +10287,7 @@ Option 2 (ontology advanced): make an equv. class axiom with some and only to ma
     <!-- https://w3id.org/pmd/mech/MECH_0000074 -->
 
     <owl:Class rdf:about="https://w3id.org/pmd/mech/MECH_0000074">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0000848"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0020311"/>
         <rdfs:label xml:lang="en">height reduction</rdfs:label>
         <skos:definition xml:lang="en">Height reduction is a mechanical property realized in a compression test. It is defined as a decrease of specimen&apos;s length before and after process in the direction of applied load.</skos:definition>
     </owl:Class>
@@ -10219,7 +10297,7 @@ Option 2 (ontology advanced): make an equv. class axiom with some and only to ma
     <!-- https://w3id.org/pmd/mech/MECH_0000075 -->
 
     <owl:Class rdf:about="https://w3id.org/pmd/mech/MECH_0000075">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0000848"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0020311"/>
         <rdfs:label xml:lang="en">strain rate sensitivity</rdfs:label>
         <skos:definition xml:lang="en">Strain rate sensitivity is a mechanical property of a material which is evaluated in a series of tensile or compression tests. It is determined as a relation between change in stress and change in strain expressed in log scale.</skos:definition>
     </owl:Class>
@@ -10229,7 +10307,7 @@ Option 2 (ontology advanced): make an equv. class axiom with some and only to ma
     <!-- https://w3id.org/pmd/mech/MECH_0000076 -->
 
     <owl:Class rdf:about="https://w3id.org/pmd/mech/MECH_0000076">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0000848"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0020142"/>
         <qudt:symbol>Q</qudt:symbol>
         <rdfs:label xml:lang="en">deformation activation energy</rdfs:label>
         <skos:definition>Energy required to activate plastic deformation mechanisms at high temperatures.</skos:definition>
@@ -10240,7 +10318,7 @@ Option 2 (ontology advanced): make an equv. class axiom with some and only to ma
     <!-- https://w3id.org/pmd/mech/MECH_0000077 -->
 
     <owl:Class rdf:about="https://w3id.org/pmd/mech/MECH_0000077">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0000848"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0080029"/>
         <rdfs:label xml:lang="en">dynamic recrystallization onset</rdfs:label>
         <skos:altLabel xml:lang="en">DRX</skos:altLabel>
         <skos:definition xml:lang="en">The strain at which new grains start forming during compression deformation due to  sufficient strain accumulation.</skos:definition>
@@ -10261,7 +10339,7 @@ Option 2 (ontology advanced): make an equv. class axiom with some and only to ma
     <!-- https://w3id.org/pmd/mech/MECH_0000079 -->
 
     <owl:Class rdf:about="https://w3id.org/pmd/mech/MECH_0000079">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0000848"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0000008"/>
         <rdfs:label xml:lang="en">energy dissipation under cyclic loading</rdfs:label>
         <skos:definition xml:lang="en">Energy dissipation under cyclic loading is a mechanical property that defines the energy lost per loading cycle due to irreversible plastic deformation. It is determined by the area inside the stress–strain hysteresis loop.</skos:definition>
     </owl:Class>
@@ -10291,7 +10369,24 @@ Option 2 (ontology advanced): make an equv. class axiom with some and only to ma
     <!-- https://w3id.org/pmd/mech/MECH_0000082 -->
 
     <owl:Class rdf:about="https://w3id.org/pmd/mech/MECH_0000082">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0000848"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0020317"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/mech/MECH_0002047"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000052"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000030"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000295"/>
+                                <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/co/PMD_0025020"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:label xml:lang="en">fatigue damage indicator</rdfs:label>
         <skos:definition xml:lang="en">Fatigue damage indicator is a mechanical property characterizing fatigue damage in the material. It is derived from changes in plastic strain, energy dissipation, and hysteresis loop during cyclic loading.</skos:definition>
     </owl:Class>
@@ -10313,7 +10408,7 @@ Option 2 (ontology advanced): make an equv. class axiom with some and only to ma
     <!-- https://w3id.org/pmd/mech/MECH_0000084 -->
 
     <owl:Class rdf:about="https://w3id.org/pmd/mech/MECH_0000084">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0000848"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/mech/MECH_0002047"/>
         <qudt:symbol>b</qudt:symbol>
         <rdfs:label xml:lang="en">fatigue strength exponent</rdfs:label>
         <skos:definition xml:lang="en">fatigue strength exponent is s a material parameter used in the Basquin equation. It helps define the stress-life curve in the high-cycle regime.</skos:definition>
@@ -10371,7 +10466,7 @@ Option 2 (ontology advanced): make an equv. class axiom with some and only to ma
     <!-- https://w3id.org/pmd/mech/MECH_0000088 -->
 
     <owl:Class rdf:about="https://w3id.org/pmd/mech/MECH_0000088">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0000848"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/mech/MECH_0002047"/>
         <qudt:symbol>C</qudt:symbol>
         <qudt:symbol xml:lang="en">scaling factor of Paris law is a mechanical property of material used in the Paris law to analytically determine the crack growth rate.</qudt:symbol>
         <rdfs:label xml:lang="en">scaling factor of Paris law</rdfs:label>
@@ -10382,7 +10477,7 @@ Option 2 (ontology advanced): make an equv. class axiom with some and only to ma
     <!-- https://w3id.org/pmd/mech/MECH_0000089 -->
 
     <owl:Class rdf:about="https://w3id.org/pmd/mech/MECH_0000089">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0000848"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/mech/MECH_0002047"/>
         <qudt:symbol>m</qudt:symbol>
         <rdfs:label xml:lang="en">slope of Paris law</rdfs:label>
         <skos:definition xml:lang="en">Slope of Paris law is a mechanical property of a material which characerizes material&apos;s sensitivity to crack propagation depending on stress intensity factor deltaK</skos:definition>
@@ -10393,7 +10488,14 @@ Option 2 (ontology advanced): make an equv. class axiom with some and only to ma
     <!-- https://w3id.org/pmd/mech/MECH_0000090 -->
 
     <owl:Class rdf:about="https://w3id.org/pmd/mech/MECH_0000090">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0000848"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0020353"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0023041"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000052"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/co/PMD_0020202"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <qudt:symbol>ΔK_th</qudt:symbol>
         <rdfs:label xml:lang="en">threshold stress intensity factor</rdfs:label>
         <skos:definition xml:lang="en">Threshold stress intensity factor is a mechanical property which defines the maximum ΔK below which crack does not grow.</skos:definition>
@@ -10404,22 +10506,17 @@ Option 2 (ontology advanced): make an equv. class axiom with some and only to ma
     <!-- https://w3id.org/pmd/mech/MECH_0000091 -->
 
     <owl:Class rdf:about="https://w3id.org/pmd/mech/MECH_0000091">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0000848"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0000008"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/pmd/co/PMD_0025006"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/mech/MECH_0000085"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <qudt:symbol>ΔK</qudt:symbol>
         <rdfs:comment xml:lang="en">K depends on crack length, stress, and geometry, Higher ΔK - faster crack growth.</rdfs:comment>
         <rdfs:label xml:lang="en">stress intensity factor range</rdfs:label>
         <skos:definition xml:lang="en">Stress intensity factor is a mechanical property which characterizes the range of stress intensity during a loading cycle in a crack propagation test.</skos:definition>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/pmd/mech/MECH_0000092 -->
-
-    <owl:Class rdf:about="https://w3id.org/pmd/mech/MECH_0000092">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0000848"/>
-        <qudt:symbol>K_IC</qudt:symbol>
-        <rdfs:comment xml:lang="en">fracture toughness is a mechanical property which characterizes the critical stress intensity factor K at which unstable fracture occurs during a crack propagation fatigue testing.</rdfs:comment>
-        <rdfs:label xml:lang="en">fracture toughness</rdfs:label>
     </owl:Class>
     
 
@@ -10488,7 +10585,7 @@ Option 2 (ontology advanced): make an equv. class axiom with some and only to ma
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="https://w3id.org/pmd/tto/TTO_0000009"/>
+                    <rdf:Description rdf:about="https://w3id.org/pmd/co/PMD_0080171"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0009007"/>
                         <owl:someValuesFrom>
@@ -10544,8 +10641,7 @@ Option 2 (ontology advanced): make an equv. class axiom with some and only to ma
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000020"/>
-        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/tto/TTO_0000009"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0080171"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0009007"/>
@@ -10611,7 +10707,7 @@ Option 2 (ontology advanced): make an equv. class axiom with some and only to ma
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="https://w3id.org/pmd/tto/TTO_0000009"/>
+                    <rdf:Description rdf:about="https://w3id.org/pmd/co/PMD_0080171"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0009007"/>
                         <owl:someValuesFrom>
@@ -10667,8 +10763,7 @@ Option 2 (ontology advanced): make an equv. class axiom with some and only to ma
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000020"/>
-        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/tto/TTO_0000009"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0080171"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0009007"/>
@@ -10734,7 +10829,7 @@ Option 2 (ontology advanced): make an equv. class axiom with some and only to ma
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="https://w3id.org/pmd/tto/TTO_0000009"/>
+                    <rdf:Description rdf:about="https://w3id.org/pmd/co/PMD_0080171"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0009007"/>
                         <owl:someValuesFrom>
@@ -10790,8 +10885,7 @@ Option 2 (ontology advanced): make an equv. class axiom with some and only to ma
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000020"/>
-        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/tto/TTO_0000009"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0080171"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0009007"/>
@@ -10857,7 +10951,7 @@ Option 2 (ontology advanced): make an equv. class axiom with some and only to ma
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="https://w3id.org/pmd/tto/TTO_0000009"/>
+                    <rdf:Description rdf:about="https://w3id.org/pmd/co/PMD_0080171"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0009007"/>
                         <owl:someValuesFrom>
@@ -10913,8 +11007,7 @@ Option 2 (ontology advanced): make an equv. class axiom with some and only to ma
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000020"/>
-        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/tto/TTO_0000009"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0080171"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0009007"/>
@@ -10996,7 +11089,7 @@ Option 2 (ontology advanced): make an equv. class axiom with some and only to ma
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="https://w3id.org/pmd/tto/TTO_0000009"/>
+                    <rdf:Description rdf:about="https://w3id.org/pmd/co/PMD_0080171"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0009007"/>
                         <owl:someValuesFrom>
@@ -11052,8 +11145,7 @@ Option 2 (ontology advanced): make an equv. class axiom with some and only to ma
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000020"/>
-        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/tto/TTO_0000009"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0080171"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0009007"/>
@@ -11119,7 +11211,7 @@ Option 2 (ontology advanced): make an equv. class axiom with some and only to ma
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="https://w3id.org/pmd/tto/TTO_0000009"/>
+                    <rdf:Description rdf:about="https://w3id.org/pmd/co/PMD_0080171"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0009007"/>
                         <owl:someValuesFrom>
@@ -11175,8 +11267,7 @@ Option 2 (ontology advanced): make an equv. class axiom with some and only to ma
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000020"/>
-        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/tto/TTO_0000009"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0080171"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0009007"/>
@@ -11259,8 +11350,7 @@ Option 2 (ontology advanced): make an equv. class axiom with some and only to ma
     <!-- https://w3id.org/pmd/mech/MECH_0002002 -->
 
     <owl:Class rdf:about="https://w3id.org/pmd/mech/MECH_0002002">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/mech/MECH_0000068"/>
-        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/tto/TTO_0000038"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0060018"/>
         <rdfs:label xml:lang="en">percentage reduction of area at fracture</rdfs:label>
         <skos:definition xml:lang="en">change in cross-sectional area of a specimen after fracture (S_o − S_f), expressed as a percentage of the original cross-sectional area, S_o</skos:definition>
     </owl:Class>
@@ -11353,6 +11443,7 @@ Option 2 (ontology advanced): make an equv. class axiom with some and only to ma
     <!-- https://w3id.org/pmd/mech/MECH_0002010 -->
 
     <owl:Class rdf:about="https://w3id.org/pmd/mech/MECH_0002010">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0000773"/>
         <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0020308"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -11370,6 +11461,7 @@ Option 2 (ontology advanced): make an equv. class axiom with some and only to ma
     <!-- https://w3id.org/pmd/mech/MECH_0002011 -->
 
     <owl:Class rdf:about="https://w3id.org/pmd/mech/MECH_0002011">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0000773"/>
         <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0020307"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -13796,7 +13888,6 @@ Option 2 (ontology advanced): make an equv. class axiom with some and only to ma
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000020"/>
         <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/mech/MECH_0002002"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -13919,7 +14010,6 @@ Option 2 (ontology advanced): make an equv. class axiom with some and only to ma
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000020"/>
         <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/mech/MECH_0002002"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -14042,7 +14132,6 @@ Option 2 (ontology advanced): make an equv. class axiom with some and only to ma
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000020"/>
         <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/mech/MECH_0002002"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -14165,7 +14254,6 @@ Option 2 (ontology advanced): make an equv. class axiom with some and only to ma
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000020"/>
         <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/mech/MECH_0002002"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -14288,7 +14376,6 @@ Option 2 (ontology advanced): make an equv. class axiom with some and only to ma
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000020"/>
         <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/mech/MECH_0002002"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -14411,7 +14498,6 @@ Option 2 (ontology advanced): make an equv. class axiom with some and only to ma
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000020"/>
         <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/mech/MECH_0002002"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -14468,6 +14554,16 @@ Option 2 (ontology advanced): make an equv. class axiom with some and only to ma
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label xml:lang="en">percentage reduction of area at fracture at 1100°C and air atmosphere</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/mech/MECH_0002047 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/mech/MECH_0002047">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0020311"/>
+        <rdfs:label xml:lang="en">fatigue-related property</rdfs:label>
+        <skos:definition xml:lang="en">a classical mechanics property that is commonly associated with the domain of materials fatigue</skos:definition>
     </owl:Class>
     
 
@@ -14598,7 +14694,7 @@ Option 2 (ontology advanced): make an equv. class axiom with some and only to ma
     <!-- https://w3id.org/pmd/mech/MECH_0025004 -->
 
     <owl:Class rdf:about="https://w3id.org/pmd/mech/MECH_0025004">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0000848"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0020311"/>
         <obo:IAO_0000119>https://en.wikipedia.org/wiki/Strain_hardening_exponent</obo:IAO_0000119>
         <rdfs:label xml:lang="en">strain hardening exponent</rdfs:label>
         <skos:altLabel xml:lang="en">strain hardening index</skos:altLabel>
@@ -14688,12 +14784,6 @@ Note: Optical extensometry may require a specific data storage method.</rdfs:com
         <skos:definition xml:lang="en">DEPRECATED Increase in the extensometer gauge length at any moment during a test</skos:definition>
         <skos:definition xml:lang="de">DEPRECATED Zunahme der Extensometer-Messlänge zu einem beliebigen Zeitpunkt eines Versuchs</skos:definition>
     </owl:Class>
-    
-
-
-    <!-- https://w3id.org/pmd/tto/TTO_0000009 -->
-
-    <owl:Class rdf:about="https://w3id.org/pmd/tto/TTO_0000009"/>
     
 
 
@@ -14821,12 +14911,6 @@ Note: The concept of parallel length is replaced by the concept of distance betw
         <co:definitionSource xml:lang="en">DIN EN ISO 6892-1:2019</co:definitionSource>
         <co:symbol xml:lang="en">A_g</co:symbol>
     </owl:Class>
-    
-
-
-    <!-- https://w3id.org/pmd/tto/TTO_0000038 -->
-
-    <owl:Class rdf:about="https://w3id.org/pmd/tto/TTO_0000038"/>
     
 
 
