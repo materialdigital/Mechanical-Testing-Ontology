@@ -51,6 +51,7 @@
     <!-- https://w3id.org/pmd/mech/MECH_0002010 -->
 
     <owl:Class rdf:about="https://w3id.org/pmd/mech/MECH_0002010">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0000773"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000052"/>
@@ -67,6 +68,7 @@
     <!-- https://w3id.org/pmd/mech/MECH_0002011 -->
 
     <owl:Class rdf:about="https://w3id.org/pmd/mech/MECH_0002011">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0000773"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000052"/>

@@ -12,6 +12,7 @@ https://w3id.org/pmd/co/PMD_0000502  # 2D
 http://purl.obolibrary.org/obo/IAO_0000010 # Software
 http://purl.obolibrary.org/obo/IAO_0020000 # ID
 http://purl.obolibrary.org/obo/IAO_0000100 # dataset
+http://purl.obolibrary.org/obo/OBI_0001930 # categorical value specification
 
 ### SDCs
 https://w3id.org/pmd/co/PMD_0020142  # Energy
@@ -37,6 +38,8 @@ https://w3id.org/pmd/co/PMD_0025018  # geometric relational quality
 https://w3id.org/pmd/co/PMD_0025026 # lubricant role
 http://purl.obolibrary.org/obo/BFO_0000063 # precedes
 https://w3id.org/pmd/co/PMD_0000789 # indentation hardness
+https://w3id.org/pmd/co/PMD_0080181 # ductility
+https://w3id.org/pmd/co/PMD_0080151 # fracture toughness
 
 # previously from TTO 
 https://w3id.org/pmd/co/PMD_0060014  # gauge length

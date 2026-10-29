@@ -373,7 +373,7 @@
     <!-- https://w3id.org/pmd/mech/MECH_0000033 -->
 
     <owl:Class rdf:about="https://w3id.org/pmd/mech/MECH_0000033">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0000848"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/mech/MECH_0002047"/>
         <rdfs:label xml:lang="en">knee point</rdfs:label>
         <skos:definition xml:lang="en">Knee point is a mechnical property realized in a fatigue process which describes the number of cycles at which the slope of a fatigue curve changes.</skos:definition>
     </owl:Class>
@@ -383,7 +383,7 @@
     <!-- https://w3id.org/pmd/mech/MECH_0000034 -->
 
     <owl:Class rdf:about="https://w3id.org/pmd/mech/MECH_0000034">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0000848"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/mech/MECH_0002047"/>
         <rdfs:label xml:lang="en">slope of S-N curve</rdfs:label>
         <skos:definition xml:lang="en">Slope of S-N curve is a mechanical property realized in the fatigue testing which defines the inclination of the S-N curve in the finite life fatigue region.</skos:definition>
     </owl:Class>
@@ -727,7 +727,7 @@ Option 2 (ontology advanced): make an equv. class axiom with some and only to ma
     <!-- https://w3id.org/pmd/mech/MECH_0000079 -->
 
     <owl:Class rdf:about="https://w3id.org/pmd/mech/MECH_0000079">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0000848"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0000008"/>
         <rdfs:label xml:lang="en">energy dissipation under cyclic loading</rdfs:label>
         <skos:definition xml:lang="en">Energy dissipation under cyclic loading is a mechanical property that defines the energy lost per loading cycle due to irreversible plastic deformation. It is determined by the area inside the stress–strain hysteresis loop.</skos:definition>
     </owl:Class>
@@ -757,7 +757,23 @@ Option 2 (ontology advanced): make an equv. class axiom with some and only to ma
     <!-- https://w3id.org/pmd/mech/MECH_0000082 -->
 
     <owl:Class rdf:about="https://w3id.org/pmd/mech/MECH_0000082">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0000848"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/mech/MECH_0002047"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000052"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000030"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000295"/>
+                                <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/co/PMD_0025020"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:label xml:lang="en">fatigue damage indicator</rdfs:label>
         <skos:definition xml:lang="en">Fatigue damage indicator is a mechanical property characterizing fatigue damage in the material. It is derived from changes in plastic strain, energy dissipation, and hysteresis loop during cyclic loading.</skos:definition>
     </owl:Class>
@@ -779,7 +795,7 @@ Option 2 (ontology advanced): make an equv. class axiom with some and only to ma
     <!-- https://w3id.org/pmd/mech/MECH_0000084 -->
 
     <owl:Class rdf:about="https://w3id.org/pmd/mech/MECH_0000084">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0000848"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/mech/MECH_0002047"/>
         <qudt:symbol>b</qudt:symbol>
         <rdfs:label xml:lang="en">fatigue strength exponent</rdfs:label>
         <skos:definition xml:lang="en">fatigue strength exponent is s a material parameter used in the Basquin equation. It helps define the stress-life curve in the high-cycle regime.</skos:definition>
@@ -837,7 +853,7 @@ Option 2 (ontology advanced): make an equv. class axiom with some and only to ma
     <!-- https://w3id.org/pmd/mech/MECH_0000088 -->
 
     <owl:Class rdf:about="https://w3id.org/pmd/mech/MECH_0000088">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0000848"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/mech/MECH_0002047"/>
         <qudt:symbol>C</qudt:symbol>
         <qudt:symbol xml:lang="en">scaling factor of Paris law is a mechanical property of material used in the Paris law to analytically determine the crack growth rate.</qudt:symbol>
         <rdfs:label xml:lang="en">scaling factor of Paris law</rdfs:label>
@@ -848,7 +864,7 @@ Option 2 (ontology advanced): make an equv. class axiom with some and only to ma
     <!-- https://w3id.org/pmd/mech/MECH_0000089 -->
 
     <owl:Class rdf:about="https://w3id.org/pmd/mech/MECH_0000089">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0000848"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/mech/MECH_0002047"/>
         <qudt:symbol>m</qudt:symbol>
         <rdfs:label xml:lang="en">slope of Paris law</rdfs:label>
         <skos:definition xml:lang="en">Slope of Paris law is a mechanical property of a material which characerizes material&apos;s sensitivity to crack propagation depending on stress intensity factor deltaK</skos:definition>
@@ -859,7 +875,13 @@ Option 2 (ontology advanced): make an equv. class axiom with some and only to ma
     <!-- https://w3id.org/pmd/mech/MECH_0000090 -->
 
     <owl:Class rdf:about="https://w3id.org/pmd/mech/MECH_0000090">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0000848"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0020353"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000052"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/co/PMD_0020202"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <qudt:symbol>ΔK_th</qudt:symbol>
         <rdfs:label xml:lang="en">threshold stress intensity factor</rdfs:label>
         <skos:definition xml:lang="en">Threshold stress intensity factor is a mechanical property which defines the maximum ΔK below which crack does not grow.</skos:definition>
@@ -870,22 +892,17 @@ Option 2 (ontology advanced): make an equv. class axiom with some and only to ma
     <!-- https://w3id.org/pmd/mech/MECH_0000091 -->
 
     <owl:Class rdf:about="https://w3id.org/pmd/mech/MECH_0000091">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0000848"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0000008"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/pmd/co/PMD_0025006"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/mech/MECH_0000085"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <qudt:symbol>ΔK</qudt:symbol>
         <rdfs:comment xml:lang="en">K depends on crack length, stress, and geometry, Higher ΔK - faster crack growth.</rdfs:comment>
         <rdfs:label xml:lang="en">stress intensity factor range</rdfs:label>
         <skos:definition xml:lang="en">Stress intensity factor is a mechanical property which characterizes the range of stress intensity during a loading cycle in a crack propagation test.</skos:definition>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/pmd/mech/MECH_0000092 -->
-
-    <owl:Class rdf:about="https://w3id.org/pmd/mech/MECH_0000092">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0000848"/>
-        <qudt:symbol>K_IC</qudt:symbol>
-        <rdfs:comment xml:lang="en">fracture toughness is a mechanical property which characterizes the critical stress intensity factor K at which unstable fracture occurs during a crack propagation fatigue testing.</rdfs:comment>
-        <rdfs:label xml:lang="en">fracture toughness</rdfs:label>
     </owl:Class>
     
 
@@ -1108,6 +1125,16 @@ Option 2 (ontology advanced): make an equv. class axiom with some and only to ma
         <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0025012"/>
         <rdfs:label xml:lang="en">alternating strength estimation from fatigue strength and loading ratios</rdfs:label>
         <skos:definition xml:lang="en">An analytical calculation that estimates alternating fatigue strength from fatigue strength estimated at a load ratio different from -1.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/mech/MECH_0002047 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/mech/MECH_0002047">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0020311"/>
+        <rdfs:label xml:lang="en">fatigue-related property</rdfs:label>
+        <skos:definition xml:lang="en">a classical mechanics property that is commonly associated with the domain of materials fatigue</skos:definition>
     </owl:Class>
     
 

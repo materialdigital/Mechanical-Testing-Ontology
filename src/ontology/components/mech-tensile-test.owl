@@ -31,6 +31,671 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/OBI_0001930 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0001930"/>
+    
+
+
+    <!-- https://w3id.org/pmd/mech/MECH_0000060 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/mech/MECH_0000060">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0000502"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000312"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/pmd/co/PMD_0000974"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">engineering stress-strain curve</rdfs:label>
+        <skos:definition xml:lang="en">Engineering stress-strain curve is a 2D data-item which is a specified output of a tensile testing process. The x-axis is a strain, i.e., the change of gauge length relative to its inital value, the y-axis is an engineering stress, i.e., force normalized to the initial cross-sectional area of a specimen.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/mech/MECH_0000061 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/mech/MECH_0000061">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0000502"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000312"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/pmd/co/PMD_0000974"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">true stress-strain curve</rdfs:label>
+        <skos:definition xml:lang="en">True stress-strain curve is a 2D data-item which is a specified output of a tensile testing process. The x-axis is a strain, i.e., the change of gauge length relative to its inital value, the y-axis is a true stress, i.e., force normalized to the instantaneous cross-sectional area of a specimen.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/mech/MECH_0000062 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/mech/MECH_0000062">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0000502"/>
+        <rdfs:label xml:lang="en">true stress-compression curve</rdfs:label>
+        <skos:definition xml:lang="en">True stress-compression curve is a 2D data-item which is a specified output of a compression testing process. The x-axis is a compression, i.e., the change of gauge length relative to its inital value, the y-axis is a true stress, i.e., force normalized to the instantaneous cross-sectional area of a specimen.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/mech/MECH_0000063 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/mech/MECH_0000063">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://w3id.org/pmd/co/PMD_0000581"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://w3id.org/pmd/co/PMD_0000009"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="https://w3id.org/pmd/co/PMD_0000008"/>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="https://w3id.org/pmd/co/PMD_0020127"/>
+                                        <owl:someValuesFrom>
+                                            <owl:Class>
+                                                <owl:intersectionOf rdf:parseType="Collection">
+                                                    <rdf:Description rdf:about="https://w3id.org/pmd/co/PMD_0000967"/>
+                                                    <owl:Restriction>
+                                                        <owl:onProperty rdf:resource="https://w3id.org/pmd/co/PMD_0000077"/>
+                                                        <owl:someValuesFrom>
+                                                            <owl:Class>
+                                                                <owl:intersectionOf rdf:parseType="Collection">
+                                                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0001931"/>
+                                                                    <owl:Restriction>
+                                                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000039"/>
+                                                                        <owl:hasValue rdf:resource="http://purl.obolibrary.org/obo/UO_0000027"/>
+                                                                    </owl:Restriction>
+                                                                    <owl:Restriction>
+                                                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0001937"/>
+                                                                        <owl:someValuesFrom>
+                                                                            <rdfs:Datatype>
+                                                                                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+                                                                                <owl:withRestrictions rdf:parseType="Collection">
+                                                                                    <rdf:Description>
+                                                                                        <xsd:minExclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">25</xsd:minExclusive>
+                                                                                    </rdf:Description>
+                                                                                </owl:withRestrictions>
+                                                                            </rdfs:Datatype>
+                                                                        </owl:someValuesFrom>
+                                                                    </owl:Restriction>
+                                                                </owl:intersectionOf>
+                                                            </owl:Class>
+                                                        </owl:someValuesFrom>
+                                                    </owl:Restriction>
+                                                </owl:intersectionOf>
+                                            </owl:Class>
+                                        </owl:someValuesFrom>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0000581"/>
+        <rdfs:label xml:lang="en">hot compression testing process</rdfs:label>
+        <skos:definition>Hot compression testing process is a compression testing process performed at elevated temperature, i.e., it has a process attribute which refers to temperature with numerical value above 25°C.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/mech/MECH_0000064 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/mech/MECH_0000064">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0000952"/>
+        <obo:IAO_0000119>DIN 50106</obo:IAO_0000119>
+        <obo:IAO_0000119>TODO add upper and lower</obo:IAO_0000119>
+        <rdfs:comment xml:lang="en">Very important note:  not added directly under yield strength from TTO, because the other yield strength is implicitly TENSILE yield strength (so much on unambigious defintions in an ontology.... )</rdfs:comment>
+        <rdfs:label xml:lang="en">compressive yield strength</rdfs:label>
+        <skos:definition xml:lang="en">compressive stress at the elastic-plastic transition in the case of deformation with no or only minor increase in compressive stress.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/mech/MECH_0000065 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/mech/MECH_0000065">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0000952"/>
+        <obo:IAO_0000119>DIN 50106</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">compressive proof strength</rdfs:label>
+        <skos:definition xml:lang="en">compressive stress at a specified plastic strain</skos:definition>
+        <co:symbol xml:lang="en">R_dp</co:symbol>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/mech/MECH_0000066 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/mech/MECH_0000066">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/mech/MECH_0000065"/>
+        <rdfs:label xml:lang="en">compressive proof strength dp02</rdfs:label>
+        <skos:definition xml:lang="en">stress at which the plastic compression  is equal to 0.2 percent of the extensometer gauge length.</skos:definition>
+        <co:symbol xml:lang="en">R_dp0,2</co:symbol>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/mech/MECH_0000067 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/mech/MECH_0000067">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0000952"/>
+        <obo:IAO_0000119>DIN 50106</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">compressive strength</rdfs:label>
+        <skos:definition>compressive stress at the point when the test piece separates into two (or more) pieces</skos:definition>
+        <co:symbol xml:lang="en">R_dB</co:symbol>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/mech/MECH_0000069 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/mech/MECH_0000069">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0000008"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/pmd/co/PMD_0025006"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/co/PMD_0000581"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 xml:lang="en">Compression loading type is a process attribute which describes the direction of an applied load to a specimen in a compression test.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">compression loading type</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/mech/MECH_0000070 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/mech/MECH_0000070">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:oneOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://w3id.org/pmd/mech/MECH_0000071"/>
+                    <rdf:Description rdf:about="https://w3id.org/pmd/mech/MECH_0000072"/>
+                    <rdf:Description rdf:about="https://w3id.org/pmd/mech/MECH_0000073"/>
+                </owl:oneOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0001930"/>
+        <obo:IAO_0000115 xml:lang="en">Compression loading type value is a categical value specification which efines the exact type of compression loading type</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">compression loading type value</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/mech/MECH_0000074 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/mech/MECH_0000074">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0020311"/>
+        <rdfs:label xml:lang="en">height reduction</rdfs:label>
+        <skos:definition xml:lang="en">Height reduction is a mechanical property realized in a compression test. It is defined as a decrease of specimen&apos;s length before and after process in the direction of applied load.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/mech/MECH_0000075 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/mech/MECH_0000075">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0020311"/>
+        <rdfs:label xml:lang="en">strain rate sensitivity</rdfs:label>
+        <skos:definition xml:lang="en">Strain rate sensitivity is a mechanical property of a material which is evaluated in a series of tensile or compression tests. It is determined as a relation between change in stress and change in strain expressed in log scale.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/mech/MECH_0000076 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/mech/MECH_0000076">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0020142"/>
+        <qudt:symbol>Q</qudt:symbol>
+        <rdfs:label xml:lang="en">deformation activation energy</rdfs:label>
+        <skos:definition>Energy required to activate plastic deformation mechanisms at high temperatures.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/mech/MECH_0000077 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/mech/MECH_0000077">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0080029"/>
+        <rdfs:label xml:lang="en">dynamic recrystallization onset</rdfs:label>
+        <skos:altLabel xml:lang="en">DRX</skos:altLabel>
+        <skos:definition xml:lang="en">The strain at which new grains start forming during compression deformation due to  sufficient strain accumulation.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/mech/MECH_0000096 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/mech/MECH_0000096">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://w3id.org/pmd/co/PMD_0080171"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0009007"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="https://w3id.org/pmd/co/PMD_0000974"/>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
+                                        <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/co/PMD_0020041"/>
+                                    </owl:Restriction>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="https://w3id.org/pmd/co/PMD_0000009"/>
+                                        <owl:someValuesFrom>
+                                            <owl:Class>
+                                                <owl:intersectionOf rdf:parseType="Collection">
+                                                    <rdf:Description rdf:about="https://w3id.org/pmd/co/PMD_0000008"/>
+                                                    <owl:Restriction>
+                                                        <owl:onProperty rdf:resource="https://w3id.org/pmd/co/PMD_0020127"/>
+                                                        <owl:someValuesFrom>
+                                                            <owl:Class>
+                                                                <owl:intersectionOf rdf:parseType="Collection">
+                                                                    <rdf:Description rdf:about="https://w3id.org/pmd/co/PMD_0000967"/>
+                                                                    <owl:Restriction>
+                                                                        <owl:onProperty rdf:resource="https://w3id.org/pmd/co/PMD_0000077"/>
+                                                                        <owl:someValuesFrom>
+                                                                            <owl:Class>
+                                                                                <owl:intersectionOf rdf:parseType="Collection">
+                                                                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0001931"/>
+                                                                                    <owl:Restriction>
+                                                                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000039"/>
+                                                                                        <owl:hasValue rdf:resource="http://purl.obolibrary.org/obo/UO_0000027"/>
+                                                                                    </owl:Restriction>
+                                                                                    <owl:Restriction>
+                                                                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0001937"/>
+                                                                                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1050</owl:hasValue>
+                                                                                    </owl:Restriction>
+                                                                                </owl:intersectionOf>
+                                                                            </owl:Class>
+                                                                        </owl:someValuesFrom>
+                                                                    </owl:Restriction>
+                                                                </owl:intersectionOf>
+                                                            </owl:Class>
+                                                        </owl:someValuesFrom>
+                                                    </owl:Restriction>
+                                                </owl:intersectionOf>
+                                            </owl:Class>
+                                        </owl:someValuesFrom>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0080171"/>
+        <rdfs:label xml:lang="en">yield strength at 1050°C and argon atmosphere</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/mech/MECH_0000097 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/mech/MECH_0000097">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://w3id.org/pmd/co/PMD_0080171"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0009007"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="https://w3id.org/pmd/co/PMD_0000974"/>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
+                                        <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/co/PMD_0020041"/>
+                                    </owl:Restriction>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="https://w3id.org/pmd/co/PMD_0000009"/>
+                                        <owl:someValuesFrom>
+                                            <owl:Class>
+                                                <owl:intersectionOf rdf:parseType="Collection">
+                                                    <rdf:Description rdf:about="https://w3id.org/pmd/co/PMD_0000008"/>
+                                                    <owl:Restriction>
+                                                        <owl:onProperty rdf:resource="https://w3id.org/pmd/co/PMD_0020127"/>
+                                                        <owl:someValuesFrom>
+                                                            <owl:Class>
+                                                                <owl:intersectionOf rdf:parseType="Collection">
+                                                                    <rdf:Description rdf:about="https://w3id.org/pmd/co/PMD_0000967"/>
+                                                                    <owl:Restriction>
+                                                                        <owl:onProperty rdf:resource="https://w3id.org/pmd/co/PMD_0000077"/>
+                                                                        <owl:someValuesFrom>
+                                                                            <owl:Class>
+                                                                                <owl:intersectionOf rdf:parseType="Collection">
+                                                                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0001931"/>
+                                                                                    <owl:Restriction>
+                                                                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000039"/>
+                                                                                        <owl:hasValue rdf:resource="http://purl.obolibrary.org/obo/UO_0000027"/>
+                                                                                    </owl:Restriction>
+                                                                                    <owl:Restriction>
+                                                                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0001937"/>
+                                                                                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1100</owl:hasValue>
+                                                                                    </owl:Restriction>
+                                                                                </owl:intersectionOf>
+                                                                            </owl:Class>
+                                                                        </owl:someValuesFrom>
+                                                                    </owl:Restriction>
+                                                                </owl:intersectionOf>
+                                                            </owl:Class>
+                                                        </owl:someValuesFrom>
+                                                    </owl:Restriction>
+                                                </owl:intersectionOf>
+                                            </owl:Class>
+                                        </owl:someValuesFrom>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0080171"/>
+        <rdfs:label xml:lang="en">yield strength at 1100°C and argon atmosphere</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/mech/MECH_0000098 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/mech/MECH_0000098">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://w3id.org/pmd/co/PMD_0080171"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0009007"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="https://w3id.org/pmd/co/PMD_0000974"/>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
+                                        <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/co/PMD_0020041"/>
+                                    </owl:Restriction>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="https://w3id.org/pmd/co/PMD_0000009"/>
+                                        <owl:someValuesFrom>
+                                            <owl:Class>
+                                                <owl:intersectionOf rdf:parseType="Collection">
+                                                    <rdf:Description rdf:about="https://w3id.org/pmd/co/PMD_0000008"/>
+                                                    <owl:Restriction>
+                                                        <owl:onProperty rdf:resource="https://w3id.org/pmd/co/PMD_0020127"/>
+                                                        <owl:someValuesFrom>
+                                                            <owl:Class>
+                                                                <owl:intersectionOf rdf:parseType="Collection">
+                                                                    <rdf:Description rdf:about="https://w3id.org/pmd/co/PMD_0000967"/>
+                                                                    <owl:Restriction>
+                                                                        <owl:onProperty rdf:resource="https://w3id.org/pmd/co/PMD_0000077"/>
+                                                                        <owl:someValuesFrom>
+                                                                            <owl:Class>
+                                                                                <owl:intersectionOf rdf:parseType="Collection">
+                                                                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0001931"/>
+                                                                                    <owl:Restriction>
+                                                                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000039"/>
+                                                                                        <owl:hasValue rdf:resource="http://purl.obolibrary.org/obo/UO_0000027"/>
+                                                                                    </owl:Restriction>
+                                                                                    <owl:Restriction>
+                                                                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0001937"/>
+                                                                                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1150</owl:hasValue>
+                                                                                    </owl:Restriction>
+                                                                                </owl:intersectionOf>
+                                                                            </owl:Class>
+                                                                        </owl:someValuesFrom>
+                                                                    </owl:Restriction>
+                                                                </owl:intersectionOf>
+                                                            </owl:Class>
+                                                        </owl:someValuesFrom>
+                                                    </owl:Restriction>
+                                                </owl:intersectionOf>
+                                            </owl:Class>
+                                        </owl:someValuesFrom>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0080171"/>
+        <rdfs:label xml:lang="en">yield strength at 1150°C and argon atmosphere</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/mech/MECH_0000099 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/mech/MECH_0000099">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://w3id.org/pmd/co/PMD_0080171"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0009007"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="https://w3id.org/pmd/co/PMD_0000974"/>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
+                                        <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/mech/MECH_0000103"/>
+                                    </owl:Restriction>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="https://w3id.org/pmd/co/PMD_0000009"/>
+                                        <owl:someValuesFrom>
+                                            <owl:Class>
+                                                <owl:intersectionOf rdf:parseType="Collection">
+                                                    <rdf:Description rdf:about="https://w3id.org/pmd/co/PMD_0000008"/>
+                                                    <owl:Restriction>
+                                                        <owl:onProperty rdf:resource="https://w3id.org/pmd/co/PMD_0020127"/>
+                                                        <owl:someValuesFrom>
+                                                            <owl:Class>
+                                                                <owl:intersectionOf rdf:parseType="Collection">
+                                                                    <rdf:Description rdf:about="https://w3id.org/pmd/co/PMD_0000967"/>
+                                                                    <owl:Restriction>
+                                                                        <owl:onProperty rdf:resource="https://w3id.org/pmd/co/PMD_0000077"/>
+                                                                        <owl:someValuesFrom>
+                                                                            <owl:Class>
+                                                                                <owl:intersectionOf rdf:parseType="Collection">
+                                                                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0001931"/>
+                                                                                    <owl:Restriction>
+                                                                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000039"/>
+                                                                                        <owl:hasValue rdf:resource="http://purl.obolibrary.org/obo/UO_0000027"/>
+                                                                                    </owl:Restriction>
+                                                                                    <owl:Restriction>
+                                                                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0001937"/>
+                                                                                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1050</owl:hasValue>
+                                                                                    </owl:Restriction>
+                                                                                </owl:intersectionOf>
+                                                                            </owl:Class>
+                                                                        </owl:someValuesFrom>
+                                                                    </owl:Restriction>
+                                                                </owl:intersectionOf>
+                                                            </owl:Class>
+                                                        </owl:someValuesFrom>
+                                                    </owl:Restriction>
+                                                </owl:intersectionOf>
+                                            </owl:Class>
+                                        </owl:someValuesFrom>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0080171"/>
+        <rdfs:label xml:lang="en">yield strength at 1050°C and air atmosphere</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/mech/MECH_0000101 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/mech/MECH_0000101">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://w3id.org/pmd/co/PMD_0080171"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0009007"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="https://w3id.org/pmd/co/PMD_0000974"/>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
+                                        <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/mech/MECH_0000103"/>
+                                    </owl:Restriction>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="https://w3id.org/pmd/co/PMD_0000009"/>
+                                        <owl:someValuesFrom>
+                                            <owl:Class>
+                                                <owl:intersectionOf rdf:parseType="Collection">
+                                                    <rdf:Description rdf:about="https://w3id.org/pmd/co/PMD_0000008"/>
+                                                    <owl:Restriction>
+                                                        <owl:onProperty rdf:resource="https://w3id.org/pmd/co/PMD_0020127"/>
+                                                        <owl:someValuesFrom>
+                                                            <owl:Class>
+                                                                <owl:intersectionOf rdf:parseType="Collection">
+                                                                    <rdf:Description rdf:about="https://w3id.org/pmd/co/PMD_0000967"/>
+                                                                    <owl:Restriction>
+                                                                        <owl:onProperty rdf:resource="https://w3id.org/pmd/co/PMD_0000077"/>
+                                                                        <owl:someValuesFrom>
+                                                                            <owl:Class>
+                                                                                <owl:intersectionOf rdf:parseType="Collection">
+                                                                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0001931"/>
+                                                                                    <owl:Restriction>
+                                                                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000039"/>
+                                                                                        <owl:hasValue rdf:resource="http://purl.obolibrary.org/obo/UO_0000027"/>
+                                                                                    </owl:Restriction>
+                                                                                    <owl:Restriction>
+                                                                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0001937"/>
+                                                                                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1150</owl:hasValue>
+                                                                                    </owl:Restriction>
+                                                                                </owl:intersectionOf>
+                                                                            </owl:Class>
+                                                                        </owl:someValuesFrom>
+                                                                    </owl:Restriction>
+                                                                </owl:intersectionOf>
+                                                            </owl:Class>
+                                                        </owl:someValuesFrom>
+                                                    </owl:Restriction>
+                                                </owl:intersectionOf>
+                                            </owl:Class>
+                                        </owl:someValuesFrom>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0080171"/>
+        <rdfs:label xml:lang="en">yield strength at 1150°C and air atmosphere</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/mech/MECH_0000102 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/mech/MECH_0000102">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://w3id.org/pmd/co/PMD_0080171"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0009007"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="https://w3id.org/pmd/co/PMD_0000974"/>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
+                                        <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/mech/MECH_0000103"/>
+                                    </owl:Restriction>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="https://w3id.org/pmd/co/PMD_0000009"/>
+                                        <owl:someValuesFrom>
+                                            <owl:Class>
+                                                <owl:intersectionOf rdf:parseType="Collection">
+                                                    <rdf:Description rdf:about="https://w3id.org/pmd/co/PMD_0000008"/>
+                                                    <owl:Restriction>
+                                                        <owl:onProperty rdf:resource="https://w3id.org/pmd/co/PMD_0020127"/>
+                                                        <owl:someValuesFrom>
+                                                            <owl:Class>
+                                                                <owl:intersectionOf rdf:parseType="Collection">
+                                                                    <rdf:Description rdf:about="https://w3id.org/pmd/co/PMD_0000967"/>
+                                                                    <owl:Restriction>
+                                                                        <owl:onProperty rdf:resource="https://w3id.org/pmd/co/PMD_0000077"/>
+                                                                        <owl:someValuesFrom>
+                                                                            <owl:Class>
+                                                                                <owl:intersectionOf rdf:parseType="Collection">
+                                                                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0001931"/>
+                                                                                    <owl:Restriction>
+                                                                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000039"/>
+                                                                                        <owl:hasValue rdf:resource="http://purl.obolibrary.org/obo/UO_0000027"/>
+                                                                                    </owl:Restriction>
+                                                                                    <owl:Restriction>
+                                                                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0001937"/>
+                                                                                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1100</owl:hasValue>
+                                                                                    </owl:Restriction>
+                                                                                </owl:intersectionOf>
+                                                                            </owl:Class>
+                                                                        </owl:someValuesFrom>
+                                                                    </owl:Restriction>
+                                                                </owl:intersectionOf>
+                                                            </owl:Class>
+                                                        </owl:someValuesFrom>
+                                                    </owl:Restriction>
+                                                </owl:intersectionOf>
+                                            </owl:Class>
+                                        </owl:someValuesFrom>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0080171"/>
+        <rdfs:label xml:lang="en">yield strength at 1100°C and air atmosphere</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/mech/MECH_0000103 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/mech/MECH_0000103">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0000001"/>
+        <rdfs:label xml:lang="en">air</rdfs:label>
+        <skos:definition xml:lang="en">air is a portion of matter which corresponds to the molecular composition of air.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/mech/MECH_0002002 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/mech/MECH_0002002">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0060018"/>
+        <rdfs:label xml:lang="en">percentage reduction of area at fracture</rdfs:label>
+        <skos:definition xml:lang="en">change in cross-sectional area of a specimen after fracture (S_o − S_f), expressed as a percentage of the original cross-sectional area, S_o</skos:definition>
+    </owl:Class>
+    
+
+
     <!-- https://w3id.org/pmd/mech/MECH_0002023 -->
 
     <owl:Class rdf:about="https://w3id.org/pmd/mech/MECH_0002023">
@@ -1663,676 +2328,6 @@
     
 
 
-    <!-- https://w3id.org/pmd/mech/MECH_0000060 -->
-
-    <owl:Class rdf:about="https://w3id.org/pmd/mech/MECH_0000060">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0000502"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000312"/>
-                <owl:allValuesFrom rdf:resource="https://w3id.org/pmd/co/PMD_0000974"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:label xml:lang="en">engineering stress-strain curve</rdfs:label>
-        <skos:definition xml:lang="en">Engineering stress-strain curve is a 2D data-item which is a specified output of a tensile testing process. The x-axis is a strain, i.e., the change of gauge length relative to its inital value, the y-axis is an engineering stress, i.e., force normalized to the initial cross-sectional area of a specimen.</skos:definition>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/pmd/mech/MECH_0000061 -->
-
-    <owl:Class rdf:about="https://w3id.org/pmd/mech/MECH_0000061">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0000502"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000312"/>
-                <owl:allValuesFrom rdf:resource="https://w3id.org/pmd/co/PMD_0000974"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:label xml:lang="en">true stress-strain curve</rdfs:label>
-        <skos:definition xml:lang="en">True stress-strain curve is a 2D data-item which is a specified output of a tensile testing process. The x-axis is a strain, i.e., the change of gauge length relative to its inital value, the y-axis is a true stress, i.e., force normalized to the instantaneous cross-sectional area of a specimen.</skos:definition>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/pmd/mech/MECH_0000062 -->
-
-    <owl:Class rdf:about="https://w3id.org/pmd/mech/MECH_0000062">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0000502"/>
-        <rdfs:label xml:lang="en">true stress-compression curve</rdfs:label>
-        <skos:definition xml:lang="en">True stress-compression curve is a 2D data-item which is a specified output of a compression testing process. The x-axis is a compression, i.e., the change of gauge length relative to its inital value, the y-axis is a true stress, i.e., force normalized to the instantaneous cross-sectional area of a specimen.</skos:definition>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/pmd/mech/MECH_0000063 -->
-
-    <owl:Class rdf:about="https://w3id.org/pmd/mech/MECH_0000063">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="https://w3id.org/pmd/co/PMD_0000581"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="https://w3id.org/pmd/co/PMD_0000009"/>
-                        <owl:someValuesFrom>
-                            <owl:Class>
-                                <owl:intersectionOf rdf:parseType="Collection">
-                                    <rdf:Description rdf:about="https://w3id.org/pmd/co/PMD_0000008"/>
-                                    <owl:Restriction>
-                                        <owl:onProperty rdf:resource="https://w3id.org/pmd/co/PMD_0020127"/>
-                                        <owl:someValuesFrom>
-                                            <owl:Class>
-                                                <owl:intersectionOf rdf:parseType="Collection">
-                                                    <rdf:Description rdf:about="https://w3id.org/pmd/co/PMD_0000967"/>
-                                                    <owl:Restriction>
-                                                        <owl:onProperty rdf:resource="https://w3id.org/pmd/co/PMD_0000077"/>
-                                                        <owl:someValuesFrom>
-                                                            <owl:Class>
-                                                                <owl:intersectionOf rdf:parseType="Collection">
-                                                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0001931"/>
-                                                                    <owl:Restriction>
-                                                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000039"/>
-                                                                        <owl:hasValue rdf:resource="http://purl.obolibrary.org/obo/UO_0000027"/>
-                                                                    </owl:Restriction>
-                                                                    <owl:Restriction>
-                                                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0001937"/>
-                                                                        <owl:someValuesFrom>
-                                                                            <rdfs:Datatype>
-                                                                                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
-                                                                                <owl:withRestrictions rdf:parseType="Collection">
-                                                                                    <rdf:Description>
-                                                                                        <xsd:minExclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">25</xsd:minExclusive>
-                                                                                    </rdf:Description>
-                                                                                </owl:withRestrictions>
-                                                                            </rdfs:Datatype>
-                                                                        </owl:someValuesFrom>
-                                                                    </owl:Restriction>
-                                                                </owl:intersectionOf>
-                                                            </owl:Class>
-                                                        </owl:someValuesFrom>
-                                                    </owl:Restriction>
-                                                </owl:intersectionOf>
-                                            </owl:Class>
-                                        </owl:someValuesFrom>
-                                    </owl:Restriction>
-                                </owl:intersectionOf>
-                            </owl:Class>
-                        </owl:someValuesFrom>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0000581"/>
-        <rdfs:label xml:lang="en">hot compression testing process</rdfs:label>
-        <skos:definition>Hot compression testing process is a compression testing process performed at elevated temperature, i.e., it has a process attribute which refers to temperature with numerical value above 25°C.</skos:definition>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/pmd/mech/MECH_0000064 -->
-
-    <owl:Class rdf:about="https://w3id.org/pmd/mech/MECH_0000064">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0000848"/>
-        <obo:IAO_0000119>DIN 50106</obo:IAO_0000119>
-        <obo:IAO_0000119>TODO add upper and lower</obo:IAO_0000119>
-        <rdfs:comment xml:lang="en">Very important note:  not added directly under yield strength from TTO, because the other yield strength is implicitly TENSILE yield strength (so much on unambigious defintions in an ontology.... )</rdfs:comment>
-        <rdfs:label xml:lang="en">compressive yield strength</rdfs:label>
-        <skos:definition xml:lang="en">compressive stress at the elastic-plastic transition in the case of deformation with no or only minor increase in compressive stress.</skos:definition>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/pmd/mech/MECH_0000065 -->
-
-    <owl:Class rdf:about="https://w3id.org/pmd/mech/MECH_0000065">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0000848"/>
-        <obo:IAO_0000119>DIN 50106</obo:IAO_0000119>
-        <rdfs:label xml:lang="en">compressive proof strength</rdfs:label>
-        <skos:definition xml:lang="en">compressive stress at a specified plastic strain</skos:definition>
-        <co:symbol xml:lang="en">R_dp</co:symbol>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/pmd/mech/MECH_0000066 -->
-
-    <owl:Class rdf:about="https://w3id.org/pmd/mech/MECH_0000066">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/mech/MECH_0000065"/>
-        <rdfs:label xml:lang="en">compressive proof strength dp02</rdfs:label>
-        <skos:definition xml:lang="en">stress at which the plastic compression  is equal to 0.2 percent of the extensometer gauge length.</skos:definition>
-        <co:symbol xml:lang="en">R_dp0,2</co:symbol>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/pmd/mech/MECH_0000067 -->
-
-    <owl:Class rdf:about="https://w3id.org/pmd/mech/MECH_0000067">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0000848"/>
-        <obo:IAO_0000119>DIN 50106</obo:IAO_0000119>
-        <rdfs:label xml:lang="en">compressive strength</rdfs:label>
-        <skos:definition>compressive stress at the point when the test piece separates into two (or more) pieces</skos:definition>
-        <co:symbol xml:lang="en">R_dB</co:symbol>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/pmd/mech/MECH_0000068 -->
-
-    <owl:Class rdf:about="https://w3id.org/pmd/mech/MECH_0000068">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0000848"/>
-        <rdfs:label xml:lang="en">ductility</rdfs:label>
-        <skos:definition xml:lang="en">Ductlity is a mechanical property which describes the ability of a material to sustain  plastic deformation under tensile load before fracture.</skos:definition>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/pmd/mech/MECH_0000069 -->
-
-    <owl:Class rdf:about="https://w3id.org/pmd/mech/MECH_0000069">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0000008"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/pmd/co/PMD_0025006"/>
-                <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/co/PMD_0000581"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <obo:IAO_0000115 xml:lang="en">Compression loading type is a process attribute which describes the direction of an applied load to a specimen in a compression test.</obo:IAO_0000115>
-        <rdfs:label xml:lang="en">compression loading type</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/pmd/mech/MECH_0000070 -->
-
-    <owl:Class rdf:about="https://w3id.org/pmd/mech/MECH_0000070">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:oneOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="https://w3id.org/pmd/mech/MECH_0000071"/>
-                    <rdf:Description rdf:about="https://w3id.org/pmd/mech/MECH_0000072"/>
-                    <rdf:Description rdf:about="https://w3id.org/pmd/mech/MECH_0000073"/>
-                </owl:oneOf>
-            </owl:Class>
-        </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0001930"/>
-        <obo:IAO_0000115 xml:lang="en">Compression loading type value is a categical value specification which efines the exact type of compression loading type</obo:IAO_0000115>
-        <rdfs:label xml:lang="en">compression loading type value</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/pmd/mech/MECH_0000074 -->
-
-    <owl:Class rdf:about="https://w3id.org/pmd/mech/MECH_0000074">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0000848"/>
-        <rdfs:label xml:lang="en">height reduction</rdfs:label>
-        <skos:definition xml:lang="en">Height reduction is a mechanical property realized in a compression test. It is defined as a decrease of specimen&apos;s length before and after process in the direction of applied load.</skos:definition>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/pmd/mech/MECH_0000075 -->
-
-    <owl:Class rdf:about="https://w3id.org/pmd/mech/MECH_0000075">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0000848"/>
-        <rdfs:label xml:lang="en">strain rate sensitivity</rdfs:label>
-        <skos:definition xml:lang="en">Strain rate sensitivity is a mechanical property of a material which is evaluated in a series of tensile or compression tests. It is determined as a relation between change in stress and change in strain expressed in log scale.</skos:definition>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/pmd/mech/MECH_0000076 -->
-
-    <owl:Class rdf:about="https://w3id.org/pmd/mech/MECH_0000076">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0000848"/>
-        <qudt:symbol>Q</qudt:symbol>
-        <rdfs:label xml:lang="en">deformation activation energy</rdfs:label>
-        <skos:definition>Energy required to activate plastic deformation mechanisms at high temperatures.</skos:definition>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/pmd/mech/MECH_0000077 -->
-
-    <owl:Class rdf:about="https://w3id.org/pmd/mech/MECH_0000077">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0000848"/>
-        <rdfs:label xml:lang="en">dynamic recrystallization onset</rdfs:label>
-        <skos:altLabel xml:lang="en">DRX</skos:altLabel>
-        <skos:definition xml:lang="en">The strain at which new grains start forming during compression deformation due to  sufficient strain accumulation.</skos:definition>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/pmd/mech/MECH_0000096 -->
-
-    <owl:Class rdf:about="https://w3id.org/pmd/mech/MECH_0000096">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="https://w3id.org/pmd/tto/TTO_0000009"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0009007"/>
-                        <owl:someValuesFrom>
-                            <owl:Class>
-                                <owl:intersectionOf rdf:parseType="Collection">
-                                    <rdf:Description rdf:about="https://w3id.org/pmd/co/PMD_0000974"/>
-                                    <owl:Restriction>
-                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
-                                        <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/co/PMD_0020041"/>
-                                    </owl:Restriction>
-                                    <owl:Restriction>
-                                        <owl:onProperty rdf:resource="https://w3id.org/pmd/co/PMD_0000009"/>
-                                        <owl:someValuesFrom>
-                                            <owl:Class>
-                                                <owl:intersectionOf rdf:parseType="Collection">
-                                                    <rdf:Description rdf:about="https://w3id.org/pmd/co/PMD_0000008"/>
-                                                    <owl:Restriction>
-                                                        <owl:onProperty rdf:resource="https://w3id.org/pmd/co/PMD_0020127"/>
-                                                        <owl:someValuesFrom>
-                                                            <owl:Class>
-                                                                <owl:intersectionOf rdf:parseType="Collection">
-                                                                    <rdf:Description rdf:about="https://w3id.org/pmd/co/PMD_0000967"/>
-                                                                    <owl:Restriction>
-                                                                        <owl:onProperty rdf:resource="https://w3id.org/pmd/co/PMD_0000077"/>
-                                                                        <owl:someValuesFrom>
-                                                                            <owl:Class>
-                                                                                <owl:intersectionOf rdf:parseType="Collection">
-                                                                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0001931"/>
-                                                                                    <owl:Restriction>
-                                                                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000039"/>
-                                                                                        <owl:hasValue rdf:resource="http://purl.obolibrary.org/obo/UO_0000027"/>
-                                                                                    </owl:Restriction>
-                                                                                    <owl:Restriction>
-                                                                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0001937"/>
-                                                                                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1050</owl:hasValue>
-                                                                                    </owl:Restriction>
-                                                                                </owl:intersectionOf>
-                                                                            </owl:Class>
-                                                                        </owl:someValuesFrom>
-                                                                    </owl:Restriction>
-                                                                </owl:intersectionOf>
-                                                            </owl:Class>
-                                                        </owl:someValuesFrom>
-                                                    </owl:Restriction>
-                                                </owl:intersectionOf>
-                                            </owl:Class>
-                                        </owl:someValuesFrom>
-                                    </owl:Restriction>
-                                </owl:intersectionOf>
-                            </owl:Class>
-                        </owl:someValuesFrom>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/tto/TTO_0000009"/>
-        <rdfs:label xml:lang="en">yield strength at 1050°C and argon atmosphere</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/pmd/mech/MECH_0000097 -->
-
-    <owl:Class rdf:about="https://w3id.org/pmd/mech/MECH_0000097">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="https://w3id.org/pmd/tto/TTO_0000009"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0009007"/>
-                        <owl:someValuesFrom>
-                            <owl:Class>
-                                <owl:intersectionOf rdf:parseType="Collection">
-                                    <rdf:Description rdf:about="https://w3id.org/pmd/co/PMD_0000974"/>
-                                    <owl:Restriction>
-                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
-                                        <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/co/PMD_0020041"/>
-                                    </owl:Restriction>
-                                    <owl:Restriction>
-                                        <owl:onProperty rdf:resource="https://w3id.org/pmd/co/PMD_0000009"/>
-                                        <owl:someValuesFrom>
-                                            <owl:Class>
-                                                <owl:intersectionOf rdf:parseType="Collection">
-                                                    <rdf:Description rdf:about="https://w3id.org/pmd/co/PMD_0000008"/>
-                                                    <owl:Restriction>
-                                                        <owl:onProperty rdf:resource="https://w3id.org/pmd/co/PMD_0020127"/>
-                                                        <owl:someValuesFrom>
-                                                            <owl:Class>
-                                                                <owl:intersectionOf rdf:parseType="Collection">
-                                                                    <rdf:Description rdf:about="https://w3id.org/pmd/co/PMD_0000967"/>
-                                                                    <owl:Restriction>
-                                                                        <owl:onProperty rdf:resource="https://w3id.org/pmd/co/PMD_0000077"/>
-                                                                        <owl:someValuesFrom>
-                                                                            <owl:Class>
-                                                                                <owl:intersectionOf rdf:parseType="Collection">
-                                                                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0001931"/>
-                                                                                    <owl:Restriction>
-                                                                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000039"/>
-                                                                                        <owl:hasValue rdf:resource="http://purl.obolibrary.org/obo/UO_0000027"/>
-                                                                                    </owl:Restriction>
-                                                                                    <owl:Restriction>
-                                                                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0001937"/>
-                                                                                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1100</owl:hasValue>
-                                                                                    </owl:Restriction>
-                                                                                </owl:intersectionOf>
-                                                                            </owl:Class>
-                                                                        </owl:someValuesFrom>
-                                                                    </owl:Restriction>
-                                                                </owl:intersectionOf>
-                                                            </owl:Class>
-                                                        </owl:someValuesFrom>
-                                                    </owl:Restriction>
-                                                </owl:intersectionOf>
-                                            </owl:Class>
-                                        </owl:someValuesFrom>
-                                    </owl:Restriction>
-                                </owl:intersectionOf>
-                            </owl:Class>
-                        </owl:someValuesFrom>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/tto/TTO_0000009"/>
-        <rdfs:label xml:lang="en">yield strength at 1100°C and argon atmosphere</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/pmd/mech/MECH_0000098 -->
-
-    <owl:Class rdf:about="https://w3id.org/pmd/mech/MECH_0000098">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="https://w3id.org/pmd/tto/TTO_0000009"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0009007"/>
-                        <owl:someValuesFrom>
-                            <owl:Class>
-                                <owl:intersectionOf rdf:parseType="Collection">
-                                    <rdf:Description rdf:about="https://w3id.org/pmd/co/PMD_0000974"/>
-                                    <owl:Restriction>
-                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
-                                        <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/co/PMD_0020041"/>
-                                    </owl:Restriction>
-                                    <owl:Restriction>
-                                        <owl:onProperty rdf:resource="https://w3id.org/pmd/co/PMD_0000009"/>
-                                        <owl:someValuesFrom>
-                                            <owl:Class>
-                                                <owl:intersectionOf rdf:parseType="Collection">
-                                                    <rdf:Description rdf:about="https://w3id.org/pmd/co/PMD_0000008"/>
-                                                    <owl:Restriction>
-                                                        <owl:onProperty rdf:resource="https://w3id.org/pmd/co/PMD_0020127"/>
-                                                        <owl:someValuesFrom>
-                                                            <owl:Class>
-                                                                <owl:intersectionOf rdf:parseType="Collection">
-                                                                    <rdf:Description rdf:about="https://w3id.org/pmd/co/PMD_0000967"/>
-                                                                    <owl:Restriction>
-                                                                        <owl:onProperty rdf:resource="https://w3id.org/pmd/co/PMD_0000077"/>
-                                                                        <owl:someValuesFrom>
-                                                                            <owl:Class>
-                                                                                <owl:intersectionOf rdf:parseType="Collection">
-                                                                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0001931"/>
-                                                                                    <owl:Restriction>
-                                                                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000039"/>
-                                                                                        <owl:hasValue rdf:resource="http://purl.obolibrary.org/obo/UO_0000027"/>
-                                                                                    </owl:Restriction>
-                                                                                    <owl:Restriction>
-                                                                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0001937"/>
-                                                                                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1150</owl:hasValue>
-                                                                                    </owl:Restriction>
-                                                                                </owl:intersectionOf>
-                                                                            </owl:Class>
-                                                                        </owl:someValuesFrom>
-                                                                    </owl:Restriction>
-                                                                </owl:intersectionOf>
-                                                            </owl:Class>
-                                                        </owl:someValuesFrom>
-                                                    </owl:Restriction>
-                                                </owl:intersectionOf>
-                                            </owl:Class>
-                                        </owl:someValuesFrom>
-                                    </owl:Restriction>
-                                </owl:intersectionOf>
-                            </owl:Class>
-                        </owl:someValuesFrom>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/tto/TTO_0000009"/>
-        <rdfs:label xml:lang="en">yield strength at 1150°C and argon atmosphere</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/pmd/mech/MECH_0000099 -->
-
-    <owl:Class rdf:about="https://w3id.org/pmd/mech/MECH_0000099">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="https://w3id.org/pmd/tto/TTO_0000009"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0009007"/>
-                        <owl:someValuesFrom>
-                            <owl:Class>
-                                <owl:intersectionOf rdf:parseType="Collection">
-                                    <rdf:Description rdf:about="https://w3id.org/pmd/co/PMD_0000974"/>
-                                    <owl:Restriction>
-                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
-                                        <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/mech/MECH_0000103"/>
-                                    </owl:Restriction>
-                                    <owl:Restriction>
-                                        <owl:onProperty rdf:resource="https://w3id.org/pmd/co/PMD_0000009"/>
-                                        <owl:someValuesFrom>
-                                            <owl:Class>
-                                                <owl:intersectionOf rdf:parseType="Collection">
-                                                    <rdf:Description rdf:about="https://w3id.org/pmd/co/PMD_0000008"/>
-                                                    <owl:Restriction>
-                                                        <owl:onProperty rdf:resource="https://w3id.org/pmd/co/PMD_0020127"/>
-                                                        <owl:someValuesFrom>
-                                                            <owl:Class>
-                                                                <owl:intersectionOf rdf:parseType="Collection">
-                                                                    <rdf:Description rdf:about="https://w3id.org/pmd/co/PMD_0000967"/>
-                                                                    <owl:Restriction>
-                                                                        <owl:onProperty rdf:resource="https://w3id.org/pmd/co/PMD_0000077"/>
-                                                                        <owl:someValuesFrom>
-                                                                            <owl:Class>
-                                                                                <owl:intersectionOf rdf:parseType="Collection">
-                                                                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0001931"/>
-                                                                                    <owl:Restriction>
-                                                                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000039"/>
-                                                                                        <owl:hasValue rdf:resource="http://purl.obolibrary.org/obo/UO_0000027"/>
-                                                                                    </owl:Restriction>
-                                                                                    <owl:Restriction>
-                                                                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0001937"/>
-                                                                                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1050</owl:hasValue>
-                                                                                    </owl:Restriction>
-                                                                                </owl:intersectionOf>
-                                                                            </owl:Class>
-                                                                        </owl:someValuesFrom>
-                                                                    </owl:Restriction>
-                                                                </owl:intersectionOf>
-                                                            </owl:Class>
-                                                        </owl:someValuesFrom>
-                                                    </owl:Restriction>
-                                                </owl:intersectionOf>
-                                            </owl:Class>
-                                        </owl:someValuesFrom>
-                                    </owl:Restriction>
-                                </owl:intersectionOf>
-                            </owl:Class>
-                        </owl:someValuesFrom>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/tto/TTO_0000009"/>
-        <rdfs:label xml:lang="en">yield strength at 1050°C and air atmosphere</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/pmd/mech/MECH_0000101 -->
-
-    <owl:Class rdf:about="https://w3id.org/pmd/mech/MECH_0000101">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="https://w3id.org/pmd/tto/TTO_0000009"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0009007"/>
-                        <owl:someValuesFrom>
-                            <owl:Class>
-                                <owl:intersectionOf rdf:parseType="Collection">
-                                    <rdf:Description rdf:about="https://w3id.org/pmd/co/PMD_0000974"/>
-                                    <owl:Restriction>
-                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
-                                        <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/mech/MECH_0000103"/>
-                                    </owl:Restriction>
-                                    <owl:Restriction>
-                                        <owl:onProperty rdf:resource="https://w3id.org/pmd/co/PMD_0000009"/>
-                                        <owl:someValuesFrom>
-                                            <owl:Class>
-                                                <owl:intersectionOf rdf:parseType="Collection">
-                                                    <rdf:Description rdf:about="https://w3id.org/pmd/co/PMD_0000008"/>
-                                                    <owl:Restriction>
-                                                        <owl:onProperty rdf:resource="https://w3id.org/pmd/co/PMD_0020127"/>
-                                                        <owl:someValuesFrom>
-                                                            <owl:Class>
-                                                                <owl:intersectionOf rdf:parseType="Collection">
-                                                                    <rdf:Description rdf:about="https://w3id.org/pmd/co/PMD_0000967"/>
-                                                                    <owl:Restriction>
-                                                                        <owl:onProperty rdf:resource="https://w3id.org/pmd/co/PMD_0000077"/>
-                                                                        <owl:someValuesFrom>
-                                                                            <owl:Class>
-                                                                                <owl:intersectionOf rdf:parseType="Collection">
-                                                                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0001931"/>
-                                                                                    <owl:Restriction>
-                                                                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000039"/>
-                                                                                        <owl:hasValue rdf:resource="http://purl.obolibrary.org/obo/UO_0000027"/>
-                                                                                    </owl:Restriction>
-                                                                                    <owl:Restriction>
-                                                                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0001937"/>
-                                                                                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1150</owl:hasValue>
-                                                                                    </owl:Restriction>
-                                                                                </owl:intersectionOf>
-                                                                            </owl:Class>
-                                                                        </owl:someValuesFrom>
-                                                                    </owl:Restriction>
-                                                                </owl:intersectionOf>
-                                                            </owl:Class>
-                                                        </owl:someValuesFrom>
-                                                    </owl:Restriction>
-                                                </owl:intersectionOf>
-                                            </owl:Class>
-                                        </owl:someValuesFrom>
-                                    </owl:Restriction>
-                                </owl:intersectionOf>
-                            </owl:Class>
-                        </owl:someValuesFrom>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/tto/TTO_0000009"/>
-        <rdfs:label xml:lang="en">yield strength at 1150°C and air atmosphere</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/pmd/mech/MECH_0000102 -->
-
-    <owl:Class rdf:about="https://w3id.org/pmd/mech/MECH_0000102">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="https://w3id.org/pmd/tto/TTO_0000009"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0009007"/>
-                        <owl:someValuesFrom>
-                            <owl:Class>
-                                <owl:intersectionOf rdf:parseType="Collection">
-                                    <rdf:Description rdf:about="https://w3id.org/pmd/co/PMD_0000974"/>
-                                    <owl:Restriction>
-                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
-                                        <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/mech/MECH_0000103"/>
-                                    </owl:Restriction>
-                                    <owl:Restriction>
-                                        <owl:onProperty rdf:resource="https://w3id.org/pmd/co/PMD_0000009"/>
-                                        <owl:someValuesFrom>
-                                            <owl:Class>
-                                                <owl:intersectionOf rdf:parseType="Collection">
-                                                    <rdf:Description rdf:about="https://w3id.org/pmd/co/PMD_0000008"/>
-                                                    <owl:Restriction>
-                                                        <owl:onProperty rdf:resource="https://w3id.org/pmd/co/PMD_0020127"/>
-                                                        <owl:someValuesFrom>
-                                                            <owl:Class>
-                                                                <owl:intersectionOf rdf:parseType="Collection">
-                                                                    <rdf:Description rdf:about="https://w3id.org/pmd/co/PMD_0000967"/>
-                                                                    <owl:Restriction>
-                                                                        <owl:onProperty rdf:resource="https://w3id.org/pmd/co/PMD_0000077"/>
-                                                                        <owl:someValuesFrom>
-                                                                            <owl:Class>
-                                                                                <owl:intersectionOf rdf:parseType="Collection">
-                                                                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0001931"/>
-                                                                                    <owl:Restriction>
-                                                                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000039"/>
-                                                                                        <owl:hasValue rdf:resource="http://purl.obolibrary.org/obo/UO_0000027"/>
-                                                                                    </owl:Restriction>
-                                                                                    <owl:Restriction>
-                                                                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0001937"/>
-                                                                                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1100</owl:hasValue>
-                                                                                    </owl:Restriction>
-                                                                                </owl:intersectionOf>
-                                                                            </owl:Class>
-                                                                        </owl:someValuesFrom>
-                                                                    </owl:Restriction>
-                                                                </owl:intersectionOf>
-                                                            </owl:Class>
-                                                        </owl:someValuesFrom>
-                                                    </owl:Restriction>
-                                                </owl:intersectionOf>
-                                            </owl:Class>
-                                        </owl:someValuesFrom>
-                                    </owl:Restriction>
-                                </owl:intersectionOf>
-                            </owl:Class>
-                        </owl:someValuesFrom>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/tto/TTO_0000009"/>
-        <rdfs:label xml:lang="en">yield strength at 1100°C and air atmosphere</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/pmd/mech/MECH_0000103 -->
-
-    <owl:Class rdf:about="https://w3id.org/pmd/mech/MECH_0000103">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0000001"/>
-        <rdfs:label xml:lang="en">air</rdfs:label>
-        <skos:definition xml:lang="en">air is a portion of matter which corresponds to the molecular composition of air.</skos:definition>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/pmd/mech/MECH_0002002 -->
-
-    <owl:Class rdf:about="https://w3id.org/pmd/mech/MECH_0002002">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/mech/MECH_0000068"/>
-        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/tto/TTO_0000038"/>
-        <rdfs:label xml:lang="en">percentage reduction of area at fracture</rdfs:label>
-        <skos:definition xml:lang="en">change in cross-sectional area of a specimen after fracture (S_o − S_f), expressed as a percentage of the original cross-sectional area, S_o</skos:definition>
-    </owl:Class>
-    
-
-
     <!-- https://w3id.org/pmd/mech/MECH_0025001 -->
 
     <owl:Class rdf:about="https://w3id.org/pmd/mech/MECH_0025001">
@@ -2410,7 +2405,7 @@
     <!-- https://w3id.org/pmd/mech/MECH_0025004 -->
 
     <owl:Class rdf:about="https://w3id.org/pmd/mech/MECH_0025004">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0000848"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0020311"/>
         <obo:IAO_0000119>https://en.wikipedia.org/wiki/Strain_hardening_exponent</obo:IAO_0000119>
         <rdfs:label xml:lang="en">strain hardening exponent</rdfs:label>
         <skos:altLabel xml:lang="en">strain hardening index</skos:altLabel>
@@ -2427,7 +2422,6 @@
         <rdfs:label xml:lang="en">target strain</rdfs:label>
         <skos:definition xml:lang="en">Target strain is a process attribute of a compression test or a hot tensile test which defines the final strain that a test piece should achieve in the test.</skos:definition>
     </owl:Class>
-    
     
 
 
