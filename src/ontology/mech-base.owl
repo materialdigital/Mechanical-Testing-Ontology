@@ -2587,12 +2587,6 @@ A manufacturing process is always a transformative process.</skos:definition>
     
 
 
-    <!-- https://w3id.org/pmd/co/PMD_0000848 -->
-
-    <owl:Class rdf:about="https://w3id.org/pmd/co/PMD_0000848"/>
-    
-
-
     <!-- https://w3id.org/pmd/co/PMD_0000849 -->
 
     <owl:Class rdf:about="https://w3id.org/pmd/co/PMD_0000849">
@@ -14765,32 +14759,16 @@ Option 2 (ontology advanced): make an equv. class axiom with some and only to ma
     
 
 
-    <!-- https://w3id.org/pmd/tto/TTO_0000005 -->
-
-    <owl:Class rdf:about="https://w3id.org/pmd/tto/TTO_0000005">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0000848"/>
-        <rdfs:comment xml:lang="en">Dimensional analysis: L
-Unit (e.g. SI): mm</rdfs:comment>
-        <rdfs:comment xml:lang="de">Hinweis: Die Dehnung kann mit verschiedenen Kanälen gemessen werden (z. B. bei Verwendung von einem oder zwei Dehnungsmesserkanälen); in der Regel wird als Dehnungswert der mittlere Durchschnittswert der beteiligten Kanäle angegeben, falls zutreffend.
-
-Hinweis: Die optische Längenänderungsmessung kann eine besondere Methode der Datenspeicherung erfordern.</rdfs:comment>
-        <rdfs:comment xml:lang="en">Note: The extension might be measured using different channels (e.g. when using one or two extensometer channels); usually, the mean average value of involved channels is given as extension value, if applicable.
-
-Note: Optical extensometry may require a specific data storage method.</rdfs:comment>
-        <rdfs:comment>replaced with uplfted term form PMDco</rdfs:comment>
-        <rdfs:label xml:lang="de">DEPRECATED Verlängerung (der Extensometer-Messlänge)</rdfs:label>
-        <rdfs:label xml:lang="en">DEPRECATED extension</rdfs:label>
-        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
-        <skos:definition xml:lang="en">DEPRECATED Increase in the extensometer gauge length at any moment during a test</skos:definition>
-        <skos:definition xml:lang="de">DEPRECATED Zunahme der Extensometer-Messlänge zu einem beliebigen Zeitpunkt eines Versuchs</skos:definition>
-    </owl:Class>
-    
-
-
     <!-- https://w3id.org/pmd/tto/TTO_0000015 -->
 
     <owl:Class rdf:about="https://w3id.org/pmd/tto/TTO_0000015">
         <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0050051"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/pmd/tto"/>
+        <rdfs:label xml:lang="de">End-Probendurchmesser</rdfs:label>
+        <rdfs:label xml:lang="en">diameter after fracture</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://w3id.org/pmd/tto/DiameterAfterFracture"/>
+        <skos:definition xml:lang="de">Die Länge einer geraden Linie durch den Mittelpunkt eines Objekts (Zugprüfstücks), gemessen nach einem Bruch, der während einer Prüfung aufgetreten ist.</skos:definition>
+        <skos:definition xml:lang="en">The length of a straight line through the center of an object (tensile test piece) as measured after a fracture occured during a test.</skos:definition>
     </owl:Class>
     
 

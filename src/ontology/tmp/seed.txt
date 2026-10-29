@@ -378,7 +378,6 @@ https://w3id.org/pmd/co/PMD_0000820
 https://w3id.org/pmd/co/PMD_0000822
 https://w3id.org/pmd/co/PMD_0000823
 https://w3id.org/pmd/co/PMD_0000833
-https://w3id.org/pmd/co/PMD_0000848
 https://w3id.org/pmd/co/PMD_0000849
 https://w3id.org/pmd/co/PMD_0000852
 https://w3id.org/pmd/co/PMD_0000886

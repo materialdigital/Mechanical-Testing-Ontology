@@ -1866,10 +1866,6 @@ A manufacturing process is always a transformative process."""@en ,
                co:PMD_0000060 "true"^^xsd:boolean .
 
 
-###  https://w3id.org/pmd/co/PMD_0000848
-co:PMD_0000848 rdf:type owl:Class .
-
-
 ###  https://w3id.org/pmd/co/PMD_0000849
 co:PMD_0000849 rdf:type owl:Class ;
                rdfs:subClassOf obo:OBI_0000070 ,
@@ -10859,28 +10855,15 @@ Option 2 (ontology advanced): make an equv. class axiom with some and only to ma
                                          skos:definition "Loading amplitute increment is a value of an incease of a loading amplitude in a load increasing fatigue testing process."@en .
 
 
-###  https://w3id.org/pmd/tto/TTO_0000005
-<https://w3id.org/pmd/tto/TTO_0000005> rdf:type owl:Class ;
-                                       rdfs:subClassOf co:PMD_0000848 ;
-                                       rdfs:comment """Dimensional analysis: L
-Unit (e.g. SI): mm"""@en ,
-                                                    """Hinweis: Die Dehnung kann mit verschiedenen Kanälen gemessen werden (z. B. bei Verwendung von einem oder zwei Dehnungsmesserkanälen); in der Regel wird als Dehnungswert der mittlere Durchschnittswert der beteiligten Kanäle angegeben, falls zutreffend.
-
-Hinweis: Die optische Längenänderungsmessung kann eine besondere Methode der Datenspeicherung erfordern."""@de ,
-                                                    """Note: The extension might be measured using different channels (e.g. when using one or two extensometer channels); usually, the mean average value of involved channels is given as extension value, if applicable.
-
-Note: Optical extensometry may require a specific data storage method."""@en ,
-                                                    "replaced with uplfted term form PMDco" ;
-                                       rdfs:label "DEPRECATED Verlängerung (der Extensometer-Messlänge)"@de ,
-                                                  "DEPRECATED extension"@en ;
-                                       owl:deprecated "true"^^xsd:boolean ;
-                                       skos:definition "DEPRECATED Increase in the extensometer gauge length at any moment during a test"@en ,
-                                                       "DEPRECATED Zunahme der Extensometer-Messlänge zu einem beliebigen Zeitpunkt eines Versuchs"@de .
-
-
 ###  https://w3id.org/pmd/tto/TTO_0000015
 <https://w3id.org/pmd/tto/TTO_0000015> rdf:type owl:Class ;
-                                       rdfs:subClassOf co:PMD_0050051 .
+                                       rdfs:subClassOf co:PMD_0050051 ;
+                                       rdfs:isDefinedBy <https://w3id.org/pmd/tto> ;
+                                       rdfs:label "End-Probendurchmesser"@de ,
+                                                  "diameter after fracture"@en ;
+                                       rdfs:seeAlso <https://w3id.org/pmd/tto/DiameterAfterFracture> ;
+                                       skos:definition "Die Länge einer geraden Linie durch den Mittelpunkt eines Objekts (Zugprüfstücks), gemessen nach einem Bruch, der während einer Prüfung aufgetreten ist."@de ,
+                                                       "The length of a straight line through the center of an object (tensile test piece) as measured after a fracture occured during a test."@en .
 
 
 ###  https://w3id.org/pmd/tto/TTO_0000024
