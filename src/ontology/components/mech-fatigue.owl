@@ -1139,6 +1139,22 @@ Option 2 (ontology advanced): make an equv. class axiom with some and only to ma
     
 
 
+    <!-- https://w3id.org/pmd/mech/MECH_0002048 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/mech/MECH_0002048">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0000008"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/pmd/co/PMD_0025006"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/mech/MECH_0002022"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">fatigue mean stress factor</rdfs:label>
+        <skos:definition xml:lang="en">Fatigue mean stress factor (K_AK) is a factor used to calculate fatigue alternating strength from fatigue strength at any loading ratio.</skos:definition>
+    </owl:Class>
+    
+
+
     <!-- https://w3id.org/pmd/mech/MECH_0025001 -->
 
     <owl:Class rdf:about="https://w3id.org/pmd/mech/MECH_0025001"/>
