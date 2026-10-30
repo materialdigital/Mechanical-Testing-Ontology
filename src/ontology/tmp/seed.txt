@@ -797,6 +797,7 @@ https://w3id.org/pmd/mech/MECH_0002044
 https://w3id.org/pmd/mech/MECH_0002045
 https://w3id.org/pmd/mech/MECH_0002046
 https://w3id.org/pmd/mech/MECH_0002047
+https://w3id.org/pmd/mech/MECH_0002048
 https://w3id.org/pmd/mech/MECH_0025001
 https://w3id.org/pmd/mech/MECH_0025002
 https://w3id.org/pmd/mech/MECH_0025004
@@ -805,6 +806,7 @@ https://w3id.org/pmd/mech/MECH_0025007
 https://w3id.org/pmd/mech/MECH_0025008
 https://w3id.org/pmd/mech/MECH_0025009
 https://w3id.org/pmd/tto
+https://w3id.org/pmd/tto/DiameterAfterFracture
 https://w3id.org/pmd/tto/MinimumCrossSectionalAreaAfterFracture
 https://w3id.org/pmd/tto/OriginalCrossSectionalArea
 https://w3id.org/pmd/tto/OriginalDiameter
@@ -820,7 +822,6 @@ https://w3id.org/pmd/tto/Rp01
 https://w3id.org/pmd/tto/Rp02
 https://w3id.org/pmd/tto/StrainRate
 https://w3id.org/pmd/tto/StressRate
-https://w3id.org/pmd/tto/TTO_0000005
 https://w3id.org/pmd/tto/TTO_0000015
 https://w3id.org/pmd/tto/TTO_0000024
 https://w3id.org/pmd/tto/TTO_0000026
