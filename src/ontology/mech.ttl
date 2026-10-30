@@ -12878,6 +12878,17 @@ Option 2 (ontology advanced): make an equv. class axiom with some and only to ma
                                          skos:definition "Fatigue mean stress factor (K_AK) is a factor used to calculate fatigue alternating strength from fatigue strength at any loading ratio."@en .
 
 
+###  https://w3id.org/pmd/mech/MECH_0002049
+<https://w3id.org/pmd/mech/MECH_0002049> rdf:type owl:Class ;
+                                         rdfs:subClassOf co:PMD_0000008 ,
+                                                         [ rdf:type owl:Restriction ;
+                                                           owl:onProperty co:PMD_0025006 ;
+                                                           owl:someValuesFrom <https://w3id.org/pmd/mech/MECH_0002021>
+                                                         ] ;
+                                         rdfs:label "temperature factor K_TD"@en ;
+                                         skos:definition "Temperature factor K_TD is a factor used in the estimation of alternating strength based on FKM guideline."@en .
+
+
 ###  https://w3id.org/pmd/mech/MECH_0025001
 <https://w3id.org/pmd/mech/MECH_0025001> rdf:type owl:Class ;
                                          owl:equivalentClass [ owl:intersectionOf ( co:PMD_0000974

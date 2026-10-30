@@ -132,6 +132,7 @@ WARN	missing_definition	percentage reduction of area at fracture at 1050°C and 
 WARN	missing_definition	percentage reduction of area at fracture at 1100°C and air atmosphere	textual definition	
 WARN	missing_definition	fatigue-related property	textual definition	
 WARN	missing_definition	fatigue mean stress factor	textual definition	
+WARN	missing_definition	temperature factor K_TD	textual definition	
 WARN	missing_definition	hot tensile testing process	textual definition	
 WARN	missing_definition	fracture strength	textual definition	
 WARN	missing_definition	strain hardening exponent	textual definition	

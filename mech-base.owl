@@ -14593,6 +14593,22 @@ Option 2 (ontology advanced): make an equv. class axiom with some and only to ma
     
 
 
+    <!-- https://w3id.org/pmd/mech/MECH_0002049 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/mech/MECH_0002049">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0000008"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/pmd/co/PMD_0025006"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/mech/MECH_0002021"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">temperature factor K_TD</rdfs:label>
+        <skos:definition xml:lang="en">Temperature factor K_TD is a factor used in the estimation of alternating strength based on FKM guideline.</skos:definition>
+    </owl:Class>
+    
+
+
     <!-- https://w3id.org/pmd/mech/MECH_0025001 -->
 
     <owl:Class rdf:about="https://w3id.org/pmd/mech/MECH_0025001">

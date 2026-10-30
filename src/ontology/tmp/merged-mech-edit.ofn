@@ -628,6 +628,7 @@ Declaration(Class(<https://w3id.org/pmd/mech/MECH_0002045>))
 Declaration(Class(<https://w3id.org/pmd/mech/MECH_0002046>))
 Declaration(Class(<https://w3id.org/pmd/mech/MECH_0002047>))
 Declaration(Class(<https://w3id.org/pmd/mech/MECH_0002048>))
+Declaration(Class(<https://w3id.org/pmd/mech/MECH_0002049>))
 Declaration(Class(<https://w3id.org/pmd/mech/MECH_0025001>))
 Declaration(Class(<https://w3id.org/pmd/mech/MECH_0025002>))
 Declaration(Class(<https://w3id.org/pmd/mech/MECH_0025004>))
@@ -2674,7 +2675,7 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.ob
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IAO_0000010> "software"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/IAO_0000010> <http://purl.obolibrary.org/obo/IAO_0000104>)
 
-# Class: <http://purl.obolibrary.org/obo/IAO_0000027> (data entity)
+# Class: <http://purl.obolibrary.org/obo/IAO_0000027> (data item)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000112> <http://purl.obolibrary.org/obo/IAO_0000027> "Data items include counts of things, analyte concentrations, and statistical summaries."@en)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/IAO_0000027> "An information content entity that is intended to be a truthful statement about something (modulo, e.g., measurement precision or other systematic errors) and is constructed/acquired by a method which reliably tends to produce (approximately) truthful statements."@en)
@@ -3902,7 +3903,7 @@ AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3
 AnnotationAssertion(<https://w3id.org/pmd/co/PMD_0000060> <https://w3id.org/pmd/co/PMD_0000953> "true"^^xsd:boolean)
 SubClassOf(<https://w3id.org/pmd/co/PMD_0000953> <http://purl.obolibrary.org/obo/BFO_0000015>)
 
-# Class: <https://w3id.org/pmd/co/PMD_0000957> (Struktur Eigenschaften Analyseverfahren)
+# Class: <https://w3id.org/pmd/co/PMD_0000957> (structural property analyzing process)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000114> <https://w3id.org/pmd/co/PMD_0000957> <http://purl.obolibrary.org/obo/IAO_0000122>)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <https://w3id.org/pmd/co/PMD_0000957> "PERSON: Joerg Waitelonis")
@@ -6963,6 +6964,13 @@ AnnotationAssertion(rdfs:label <https://w3id.org/pmd/mech/MECH_0002048> "fatigue
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/mech/MECH_0002048> "Fatigue mean stress factor (K_AK) is a factor used to calculate fatigue alternating strength from fatigue strength at any loading ratio."@en)
 SubClassOf(<https://w3id.org/pmd/mech/MECH_0002048> <https://w3id.org/pmd/co/PMD_0000008>)
 SubClassOf(<https://w3id.org/pmd/mech/MECH_0002048> ObjectSomeValuesFrom(<https://w3id.org/pmd/co/PMD_0025006> <https://w3id.org/pmd/mech/MECH_0002022>))
+
+# Class: <https://w3id.org/pmd/mech/MECH_0002049> (temperature factor K_TD)
+
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/mech/MECH_0002049> "temperature factor K_TD"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/mech/MECH_0002049> "Temperature factor K_TD is a factor used in the estimation of alternating strength based on FKM guideline."@en)
+SubClassOf(<https://w3id.org/pmd/mech/MECH_0002049> <https://w3id.org/pmd/co/PMD_0000008>)
+SubClassOf(<https://w3id.org/pmd/mech/MECH_0002049> ObjectSomeValuesFrom(<https://w3id.org/pmd/co/PMD_0025006> <https://w3id.org/pmd/mech/MECH_0002021>))
 
 # Class: <https://w3id.org/pmd/mech/MECH_0025001> (hot tensile testing process)
 
